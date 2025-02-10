@@ -207,7 +207,7 @@ const Inicio = () => {
                     <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                    <i className="fas fa-headset"></i> Premium soporte
+                    <i className="fas fa-headset"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
