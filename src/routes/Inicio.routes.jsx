@@ -46,7 +46,7 @@ const InicioRouters = () => {
             fontWeight: "400",
           }}
         >
-          Tu tienda para hacks de 8 Ball Pool.
+          Propieda de Monaco y Colaborador Restrepo
         </span>
       </div>
 
