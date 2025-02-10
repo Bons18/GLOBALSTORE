@@ -204,10 +204,10 @@ const Inicio = () => {
                     <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                    <i className="fas fa-key"></i> Basic
+                  <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                    <i className="fas fa-headset"></i> Premium
+                  <i className="fas fa-gem"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
@@ -292,10 +292,10 @@ const Inicio = () => {
                     <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                    <i className="fas fa-key"></i> Basic
+                  <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                    <i className="fas fa-headset"></i> Premium
+                  <i className="fas fa-gem"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
@@ -395,10 +395,10 @@ const Inicio = () => {
                     <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                    <i className="fas fa-key"></i> Basic
+                  <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                    <i className="fas fa-headset"></i> Premium
+                  <i className="fas fa-gem"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
@@ -479,10 +479,10 @@ const Inicio = () => {
                     <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                    <i className="fas fa-key"></i> Basic
+                  <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                    <i className="fas fa-headset"></i> Premium
+                  <i className="fas fa-gem"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
@@ -550,10 +550,10 @@ const Inicio = () => {
                     <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                    <i className="fas fa-key"></i> Basic
+                  <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                    <i className="fas fa-headset"></i> Premium
+                  <i className="fas fa-gem"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
@@ -628,10 +628,10 @@ const Inicio = () => {
                     <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                    <i className="fas fa-key"></i> Basic
+                  <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                    <i className="fas fa-headset"></i> Premium
+                  <i className="fas fa-gem"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
@@ -712,10 +712,10 @@ const Inicio = () => {
                     <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                    <i className="fas fa-key"></i> Basic
+                  <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                    <i className="fas fa-headset"></i> Premium
+                  <i className="fas fa-gem"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
