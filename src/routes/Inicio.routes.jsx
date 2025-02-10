@@ -166,121 +166,129 @@ const InicioRouters = () => {
       </Button>
 
       {/* Botón PSH4X */}
-      <Button
-        variant="outline-light"
-        className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button mb-2 mb-sm-0"
-        href="#PSH4X-2"
-        target="_blank"
-        style={{
-          fontWeight: "bold",
-          maxWidth: "250px",
-          width: "auto",
-          paddingLeft: "15px",
-          paddingRight: "15px",
-          backgroundColor: "#007AFF",
-          color: "#FFFFFF",
-          borderRadius: "50px",
-          boxShadow: "0 4px 8px rgba(0, 122, 255, 0.3)",
-          transition: "all 0.3s ease",
-          marginRight: "10px", // Espacio a la derecha de los botones
-          marginBottom: "10px", // Espacio debajo
-        }}
-        onMouseEnter={(e) => {
-          e.target.style.backgroundColor = "#005BB5";
-          e.target.style.boxShadow = "0 6px 12px rgba(0, 91, 181, 0.4)";
-        }}
-        onMouseLeave={(e) => {
-          e.target.style.backgroundColor = "#007AFF";
-          e.target.style.boxShadow = "0 4px 8px rgba(0, 122, 255, 0.3)";
-        }}
-      >
-        <img
-          src="/PSH4.png"
-          alt="PSH4X"
-          style={{ width: "20px", height: "20px", marginRight: "10px" }}
-        />
-        PSH4X
-      </Button>
+<Button
+  variant="outline-light"
+  className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button mb-2 mb-sm-0"
+  href="#PSH4X-2" // Aquí usas el ID del contenedor
+  style={{
+    fontWeight: "bold",
+    maxWidth: "250px",
+    width: "auto",
+    paddingLeft: "15px",
+    paddingRight: "15px",
+    backgroundColor: "#007AFF",
+    color: "#FFFFFF",
+    borderRadius: "50px",
+    boxShadow: "0 4px 8px rgba(0, 122, 255, 0.3)",
+    transition: "all 0.3s ease",
+    marginRight: "10px", // Espacio a la derecha de los botones
+    marginBottom: "10px", // Espacio debajo
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.backgroundColor = "#005BB5";
+    e.target.style.boxShadow = "0 6px 12px rgba(0, 91, 181, 0.4)";
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.backgroundColor = "#007AFF";
+    e.target.style.boxShadow = "0 4px 8px rgba(0, 122, 255, 0.3)";
+  }}
+>
+  <img
+    src="/PSH4.png"
+    alt="PSH4X"
+    style={{ width: "20px", height: "20px", marginRight: "10px" }}
+  />
+  PSH4X
+</Button>
+
 
       {/* Botón AimKing */}
-      <Button
-        variant="outline-light"
-        className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button mb-2 mb-sm-0"
-        href="#AimKing-3"
-        target="_blank"
-        style={{
-          fontWeight: "bold",
-          maxWidth: "250px",
-          width: "auto",
-          paddingLeft: "15px",
-          paddingRight: "15px",
-          backgroundColor: "#007AFF",
-          color: "#FFFFFF",
-          borderRadius: "50px",
-          boxShadow: "0 4px 8px rgba(0, 122, 255, 0.3)",
-          transition: "all 0.3s ease",
-          marginRight: "10px", // Espacio a la derecha de los botones
-          marginBottom: "10px", // Espacio debajo
-        }}
-        onMouseEnter={(e) => {
-          e.target.style.backgroundColor = "#005BB5";
-          e.target.style.boxShadow = "0 6px 12px rgba(0, 91, 181, 0.4)";
-        }}
-        onMouseLeave={(e) => {
-          e.target.style.backgroundColor = "#007AFF";
-          e.target.style.boxShadow = "0 4px 8px rgba(0, 122, 255, 0.3)";
-        }}
-      >
-        <img
-          src="/AimKing.jpg"
-          alt="AimKing"
-          style={{
-            width: "25px",
-            height: "25px",
-            marginRight: "10px",
-            borderRadius: "50%",
-            objectFit: "cover",
-          }}
-        />
-        AimKing
-      </Button>
+<Button
+  variant="outline-light"
+  className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button mb-2 mb-sm-0"
+  href="#AimKing-3" // Redirige a la sección con el id AimKing-3
+  style={{
+    fontWeight: "bold",
+    maxWidth: "250px",
+    width: "auto",
+    paddingLeft: "15px",
+    paddingRight: "15px",
+    backgroundColor: "#007AFF",
+    color: "#FFFFFF",
+    borderRadius: "50px",
+    boxShadow: "0 4px 8px rgba(0, 122, 255, 0.3)",
+    transition: "all 0.3s ease",
+    marginRight: "10px", // Espacio a la derecha de los botones
+    marginBottom: "10px", // Espacio debajo
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.backgroundColor = "#005BB5";
+    e.target.style.boxShadow = "0 6px 12px rgba(0, 91, 181, 0.4)";
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.backgroundColor = "#007AFF";
+    e.target.style.boxShadow = "0 4px 8px rgba(0, 122, 255, 0.3)";
+  }}
+>
+  <img
+    src="/AimKing.jpg"
+    alt="AimKing"
+    style={{
+      width: "25px",
+      height: "25px",
+      marginRight: "10px",
+      borderRadius: "50%",
+      objectFit: "cover",
+    }}
+  />
+  AimKing
+</Button>
+
 
       {/* Botón Snake */}
       <Button
-        variant="outline-light"
-        className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button mb-2 mb-sm-0"
-        href="#Snake-5"
-        target="_blank"
-        style={{
-          fontWeight: "bold",
-          maxWidth: "250px",
-          width: "auto",
-          paddingLeft: "15px",
-          paddingRight: "15px",
-          backgroundColor: "#007AFF",
-          color: "#FFFFFF",
-          borderRadius: "50px",
-          boxShadow: "0 4px 8px rgba(0, 122, 255, 0.3)",
-          transition: "all 0.3s ease",
-          marginRight: "10px", // Espacio a la derecha de los botones
-          marginBottom: "10px", // Espacio debajo
-        }}
-        onMouseEnter={(e) => {
-          e.target.style.backgroundColor = "#005BB5";
-          e.target.style.boxShadow = "0 6px 12px rgba(0, 91, 181, 0.4)";
-        }}
-        onMouseLeave={(e) => {
-          e.target.style.backgroundColor = "#007AFF";
-          e.target.style.boxShadow = "0 4px 8px rgba(0, 122, 255, 0.3)";
-        }}
-      >
-        <img
-          src="/snake.png"
-          alt="Snake"
-          style={{ width: "25px", height: "25px", marginRight: "10px" }}
-        />
-        Snake
-      </Button>
+  variant="outline-light"
+  className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button mb-2 mb-sm-0"
+  href="#Snake-5"
+  onClick={(e) => {
+    e.preventDefault();
+    document.getElementById("Snake-5").scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }}
+  target="_blank"
+  style={{
+    fontWeight: "bold",
+    maxWidth: "250px",
+    width: "auto",
+    paddingLeft: "15px",
+    paddingRight: "15px",
+    backgroundColor: "#007AFF",
+    color: "#FFFFFF",
+    borderRadius: "50px",
+    boxShadow: "0 4px 8px rgba(0, 122, 255, 0.3)",
+    transition: "all 0.3s ease",
+    marginRight: "10px", 
+    marginBottom: "10px", 
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.backgroundColor = "#005BB5";
+    e.target.style.boxShadow = "0 6px 12px rgba(0, 91, 181, 0.4)";
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.backgroundColor = "#007AFF";
+    e.target.style.boxShadow = "0 4px 8px rgba(0, 122, 255, 0.3)";
+  }}
+>
+  <img
+    src="/snake.png"
+    alt="Snake"
+    style={{ width: "25px", height: "25px", marginRight: "10px" }}
+  />
+  Snake
+</Button>
+
     </Nav>
   </Navbar.Collapse>
 </Container>

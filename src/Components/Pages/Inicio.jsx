@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button, Card, Modal } from "react-bootstrap";
 import { FaChevronRight, FaFacebookF, FaInstagram } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
 import { motion } from "framer-motion";
 import "../../styles/inicio.css";
 
