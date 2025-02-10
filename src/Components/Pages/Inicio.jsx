@@ -257,7 +257,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-telegram"></i> Contact by Telegram
+                <i className="fab fa-telegram"></i> Buy by Telegram
               </a>
               <a
                 href="https://youtube.com/shorts/RbgR3eUSQp8?si=wDF2PHObjcEqSu06"
@@ -352,7 +352,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-telegram"></i> Contact by Telegram
+                <i className="fab fa-telegram"></i> Buy by Telegram
               </a>
               <a
                 href="https://youtube.com/shorts/RbgR3eUSQp8?si=wDF2PHObjcEqSu06"
@@ -441,7 +441,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-telegram"></i> Contact by Telegram
+                <i className="fab fa-telegram"></i> Buy by Telegram
               </a>
               <a
                 href="https://youtube.com/shorts/RbgR3eUSQp8?si=wDF2PHObjcEqSu06"
@@ -511,7 +511,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-telegram"></i> Contact by Telegram
+                <i className="fab fa-telegram"></i> Buy by Telegram
               </a>
               <a
                 href="https://youtube.com/shorts/RbgR3eUSQp8?si=wDF2PHObjcEqSu06"
@@ -589,7 +589,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-telegram"></i> Contact by Telegram
+                <i className="fab fa-telegram"></i> Buy by Telegram
               </a>
               <a
                 href="https://youtube.com/shorts/RbgR3eUSQp8?si=wDF2PHObjcEqSu06"
@@ -674,7 +674,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-telegram"></i> Contact by Telegram
+                <i className="fab fa-telegram"></i> Buy by Telegram
               </a>
               <a
                 href="https://youtube.com/shorts/u3DzIa6IV4A"
@@ -758,7 +758,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-telegram"></i> Contact by Telegram
+                <i className="fab fa-telegram"></i> Buy by Telegram
               </a>
               <a
                 href="https://youtube.com/shorts/u3DzIa6IV4A"
