@@ -80,9 +80,12 @@ const Inicio = () => {
               />
             </div>
             <h1 className="mb-4 fw-bold" style={{ color: "#FFFFFF" }}>
-              Welcome to, 𝗣𝗥𝗢 𝗣𝗟𝗔𝗬𝗘𝗥𝗦 𝗦𝗧𝗢𝗥𝗘
+              Welcome to,{" "}
+              <span style={{ fontWeight: "bold", color: "#FFD700" }}>
+                𝗣𝗥𝗢 𝗣𝗟𝗔𝗬𝗘𝗥𝗦 𝗦𝗧𝗢𝗥𝗘
+              </span>
               <br />
-              <br></br>
+              <br />
               The most professional and secure service on the market.
             </h1>
 
