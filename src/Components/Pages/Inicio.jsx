@@ -115,6 +115,34 @@ const Inicio = () => {
                   Discover more <FaChevronRight className="ms-2" />
                 </Button>
               </motion.div>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <Button
+                  variant="outline-light"
+                  href="/convert.html"
+                  className="px-4 py-2 fw-bold"
+                  aria-label="Descubre más"
+                  style={{
+                    borderColor: "#FFFFFF",
+                    color: "#FFFFFF",
+                    backgroundColor: "#198754",
+                    borderRadius: "12px",
+                    padding: "12px 24px",
+                    fontSize: "16px",
+                    fontWeight: "600",
+                    textTransform: "uppercase",
+                    boxShadow: "0 4px 6px rgba(255, 255, 255, 0.2)",
+                    transition: "all 0.3s ease",
+                  }}
+                  onMouseEnter={(e) =>
+                    (e.target.style.backgroundColor = "#606060")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.target.style.backgroundColor = "transparent")
+                  }
+                >
+                  Monaco Converter! <FaChevronRight className="ms-2" />
+                </Button>
+              </motion.div>
             </div>
           </Col>
         </Row>
@@ -1301,8 +1329,8 @@ const Inicio = () => {
       >
         <Row className="justify-content-center">
           <Col md={10}>
-            <Row className="align-items-center">
-              <Col md={6} className="mb-4 mb-md-0">
+            <Row className="align-items-center justify-content-center">
+              <Col md={6} className="text-center mb-4 mb-md-0">
                 <motion.h2
                   className="fw-bold mb-3"
                   style={{ color: "#007AFF" }}
@@ -1310,38 +1338,8 @@ const Inicio = () => {
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.8 }}
                 >
-                  Convert the hack prices to your local currency here.
+                  © 2025 MonacoStore. All rights reserved.
                 </motion.h2>
-
-                <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <Button
-                    variant="info"
-                    href="/convert.html"
-                    className="px-4 py-3 fw-bold"
-                    style={{
-                      backgroundColor: "#007AFF",
-                      color: "#FFFFFF",
-                      borderRadius: "12px",
-                      padding: "12px 24px",
-                      fontSize: "16px",
-                      fontWeight: "600",
-                      textTransform: "uppercase",
-                      boxShadow: "0 4px 6px rgba(0, 122, 255, 0.2)",
-                      transition: "all 0.3s ease",
-                    }}
-                    onMouseEnter={(e) =>
-                      (e.target.style.backgroundColor = "#005BB5")
-                    }
-                    onMouseLeave={(e) =>
-                      (e.target.style.backgroundColor = "#007AFF")
-                    }
-                  >
-                    Monaco Converter! <FaChevronRight className="ms-2" />
-                  </Button>
-                </motion.div>
               </Col>
             </Row>
           </Col>
