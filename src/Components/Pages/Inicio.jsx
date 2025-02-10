@@ -131,7 +131,6 @@ const Inicio = () => {
                     fontSize: "16px",
                     fontWeight: "600",
                     textTransform: "uppercase",
-                    boxShadow: "0 4px 6px rgba(255, 255, 255, 0.2)",
                     transition: "all 0.3s ease",
                   }}
                   onMouseEnter={
