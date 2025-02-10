@@ -156,7 +156,7 @@ const Inicio = () => {
           transition={{ duration: 0.8 }}
           style={{
             fontWeight: "bold",
-            color: "rgb(255, 87, 34)",
+            color: "rgb(0, 123, 255)",
           }} /* Color cálido y vibrante */
         >
           <i className="fas fa-cogs"></i> FLEXIBLE AID PLANS
