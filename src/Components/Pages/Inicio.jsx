@@ -134,7 +134,8 @@ const Inicio = () => {
                     fontWeight: "600",
                     textTransform: "uppercase",
                     transition: "all 0.3s ease",
-                  }}
+                    boxShadow: "rgba(255, 255, 255, 0.2) 0px 4px 6px"
+                  }}                  
                   onMouseEnter={
                     (e) => (e.target.style.backgroundColor = "#198754") // Mantén el verde
                   }
