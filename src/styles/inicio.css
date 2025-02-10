@@ -117,7 +117,7 @@ footer .divider {
 }
 
 body {
-  background: url("/public/13.png") no-repeat center center fixed; /* Mantener imagen de fondo */
+  background: url("/13.png") no-repeat center center fixed; /* Mantener imagen de fondo */
   background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
   font-weight: 600; /* Poppins Bold */
   color: #02002c; /* Color de texto oscuro */
