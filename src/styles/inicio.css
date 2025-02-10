@@ -1,10 +1,4 @@
-:root {
-  --color-cafe: #4e342e; /* Café */
-  --color-verde: #388e3c; /* Verde */
-  --color-negro: #0d0d0d; /* Negro */
-  --color-azul: #1e88e5; /* Azul */
-  --color-dorado: #f7c46a; /* Dorado para los detalles */
-}
+
 
 footer {
   background-color: var(--color-negro);
@@ -376,19 +370,6 @@ motion.h2 {
   transform: translateY(-5px);
 }
 
-.plan-header {
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #f0f0f0;
-}
-
-.plan-header span {
-  width: 33%;
-  text-align: center;
-}
 
 .permanent-plan-info {
   margin-top: 20px;
@@ -602,7 +583,7 @@ motion.h2 {
 }
 
 .plan-header span {
-  width: 33%;
+  width: 35%;
   text-align: center;
 }
 
@@ -629,7 +610,7 @@ motion.h2 {
 
 .price-with-support {
   font-weight: bold;
-  color: #007bff;
+  color: #ffc107;
 }
 
 .text-center a {

@@ -100,14 +100,15 @@
 /* layaout */
 
 .custom-title {
-    font-family: 'San Francisco', sans-serif; /* O la fuente que prefieras */
-    font-size: 1.8rem; /* Tamaño de fuente más grande */
-    font-weight: 600; /* Peso de fuente medio-negrita */
-    color: #333; /* Color de texto oscuro para mayor contraste */
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    letter-spacing: 1px; /* Espaciado de letras para hacerlo más aireado */
-    line-height: 1.3; /* Mejor espaciamiento entre líneas */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+    line-height: 1.3;
 }
+
 
 /* Mejoras al botón de Telegram */
 .custom-telegram-button {

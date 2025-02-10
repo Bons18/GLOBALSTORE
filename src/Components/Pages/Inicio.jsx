@@ -86,12 +86,6 @@ const Inicio = () => {
               The most professional and secure service on the market.
             </h1>
 
-            <p className="lead mb-4" style={{ color: "#FFFFFF" }}>
-              Here you will find the best solutions to improve your 8 Ball Pool
-              experience. From exclusive hacks to advanced 100% anti-ban tricks.
-              Make every move count with MonacoShop!
-            </p>
-
             <div className="d-flex justify-content-center gap-3">
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <Button
@@ -126,63 +120,9 @@ const Inicio = () => {
         </Row>
       </motion.div>
 
-      <Container fluid className="py-5" id="nuestros-productos">
+      <Container fluid className="py-3" id="FLEXIBLEAIDPLANS">
         <motion.h2
-          className="text-center mb-5"
-          style={{ color: "#007AFF" }}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          AVAILABLE PRODUCTS
-        </motion.h2>
-        <Row>
-          {[
-            {
-              image: "/EasyVictory.png",
-              title: "Easy Victory",
-              description:
-                "Enjoy 100% anti-ban hacks designed to enhance your gaming experience.",
-            },
-            {
-              image: "/spider.png",
-              title: "Spider Tool",
-              description:
-                "presents a simple and efficient solution to improve your game in 8 Ball Pool.",
-            },
-            {
-              image: "/PSH4.png",
-              title: "PSH4X",
-              description:
-                "Access advanced tricks to master the game and improve your skills.",
-            },
-            {
-              image: "/AimKing.jpg",
-              title: "AimKing",
-              description:
-                "Optimize your performance with exclusive tools for 8 Ball Pool.",
-            },
-            {
-              image: "/snake.png",
-              title: "Snake",
-              description:
-                "Snake Aim is an 8-ball pool hack that guarantees 100% wins without manual intervention.",
-            },
-          ].map((service) => (
-            <ServiceCard
-              key={service.title}
-              image={service.image}
-              title={service.title}
-              description={service.description}
-              onMoreInfo={handleMoreInfo}
-            />
-          ))}
-        </Row>
-      </Container>
-
-      <Container fluid className="py-5" id="FLEXIBLEAIDPLANS">
-        <motion.h2
-          className="text-center mb-5"
+          className="text-center mb-3"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -204,10 +144,10 @@ const Inicio = () => {
                     <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                  <i className="fas fa-key"></i> Basic
+                    <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                  <i className="fas fa-gem"></i> Premium
+                    <i className="fas fa-gem"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
@@ -243,38 +183,121 @@ const Inicio = () => {
               </div>
             </div>
             <div className="text-center mt-4 d-flex justify-content-center align-items-center">
-              <a
+              {/* Botón Sample Video #1 */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://youtu.be/ESFXezoQ8ng"
-                className="btn btn-youtube ms-3"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#FF0000", // Color de YouTube
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(255, 0, 0, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#CC0000";
+                  e.target.style.boxShadow = "0 6px 12px rgba(204, 0, 0, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#FF0000";
+                  e.target.style.boxShadow = "0 4px 8px rgba(255, 0, 0, 0.3)";
+                }}
               >
-                <i className="fab fa-youtube"></i> Sample Video #1
-              </a>
-              <a
+                <i
+                  className="fab fa-youtube me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Sample Video #1
+              </Button>
+
+              {/* Botón Buy by Telegram */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://t.me/ChetoHack_100AntiBan_8BP?text=Me%20gustar%C3%ADa%20adquirir%20un%20PLAN%20FLEXIBLE%20DE%20AYUDA%20%28HORAS%29%20%E2%8F%B3%F0%9F%94%91.%20%C2%BFPodr%C3%ADas%20indicarme%20c%C3%B3mo%20proceder%3F%20%F0%9F%A4%94%F0%9F%99%8C"
-                className="btn btn-telegram"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#007AFF", // Color de Telegram
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(0, 122, 255, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#005BB5";
+                  e.target.style.boxShadow = "0 6px 12px rgba(0, 91, 181, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#007AFF";
+                  e.target.style.boxShadow = "0 4px 8px rgba(0, 122, 255, 0.3)";
+                }}
               >
-                <i className="fab fa-telegram"></i> Buy by Telegram
-              </a>
-              <a
+                <i
+                  className="fab fa-telegram me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Buy by Telegram
+              </Button>
+
+              {/* Botón Sample Video #2 */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://youtube.com/shorts/RbgR3eUSQp8?si=wDF2PHObjcEqSu06"
-                className="btn btn-youtube ms-3"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#FF0000", // Color de YouTube
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(255, 0, 0, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#CC0000";
+                  e.target.style.boxShadow = "0 6px 12px rgba(204, 0, 0, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#FF0000";
+                  e.target.style.boxShadow = "0 4px 8px rgba(255, 0, 0, 0.3)";
+                }}
               >
-                <i className="fab fa-youtube"></i> Sample video #2
-              </a>
+                <i
+                  className="fab fa-youtube me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Sample Video #2
+              </Button>
             </div>
           </Col>
         </Row>
       </Container>
 
-      <Container fluid className="py-5" id="PERMANENTPLANS">
+      <Container fluid className="py-3" id="PERMANENTPLANS">
         <motion.h2
-          className="text-center mb-5"
+          className="text-center mb-3"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -292,10 +315,10 @@ const Inicio = () => {
                     <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                  <i className="fas fa-key"></i> Basic
+                    <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                  <i className="fas fa-gem"></i> Premium
+                    <i className="fas fa-gem"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
@@ -338,38 +361,121 @@ const Inicio = () => {
               </div>
             </div>
             <div className="text-center mt-4 d-flex justify-content-center align-items-center">
-              <a
+              {/* Botón Sample Video #1 */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://youtu.be/ESFXezoQ8ng"
-                className="btn btn-youtube ms-3"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#FF0000", // Color de YouTube
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(255, 0, 0, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#CC0000";
+                  e.target.style.boxShadow = "0 6px 12px rgba(204, 0, 0, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#FF0000";
+                  e.target.style.boxShadow = "0 4px 8px rgba(255, 0, 0, 0.3)";
+                }}
               >
-                <i className="fab fa-youtube"></i> Sample Video #1
-              </a>
-              <a
+                <i
+                  className="fab fa-youtube me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Sample Video #1
+              </Button>
+
+              {/* Botón Buy by Telegram */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://t.me/ChetoHack_100AntiBan_8BP?text=Hola%2C%20Monaco%20%E2%99%8B%2C%0AMe%20gustar%C3%ADa%20adquirir%20una%20llave%20de%20la%20categor%C3%ADa%20PERMANENTE%20%F0%9F%94%91.%0A%C2%BFPodr%C3%ADas%20indicarme%20c%C3%B3mo%20proceder%3F%20%F0%9F%A4%94%F0%9F%99%8C"
-                className="btn btn-telegram"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#007AFF", // Color de Telegram
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(0, 122, 255, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#005BB5";
+                  e.target.style.boxShadow = "0 6px 12px rgba(0, 91, 181, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#007AFF";
+                  e.target.style.boxShadow = "0 4px 8px rgba(0, 122, 255, 0.3)";
+                }}
               >
-                <i className="fab fa-telegram"></i> Buy by Telegram
-              </a>
-              <a
+                <i
+                  className="fab fa-telegram me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Buy by Telegram
+              </Button>
+
+              {/* Botón Sample Video #2 */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://youtube.com/shorts/RbgR3eUSQp8?si=wDF2PHObjcEqSu06"
-                className="btn btn-youtube ms-3"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#FF0000", // Color de YouTube
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(255, 0, 0, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#CC0000";
+                  e.target.style.boxShadow = "0 6px 12px rgba(204, 0, 0, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#FF0000";
+                  e.target.style.boxShadow = "0 4px 8px rgba(255, 0, 0, 0.3)";
+                }}
               >
-                <i className="fab fa-youtube"></i> Sample video #2
-              </a>
+                <i
+                  className="fab fa-youtube me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Sample Video #2
+              </Button>
             </div>
           </Col>
         </Row>
       </Container>
 
-      <Container fluid className="py-5" id="EasyVictory-1">
+      <Container fluid className="py-3" id="EasyVictory-1">
         <motion.h2
-          className="text-center mb-5"
+          className="text-center mb-3"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -395,10 +501,10 @@ const Inicio = () => {
                     <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                  <i className="fas fa-key"></i> Basic
+                    <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                  <i className="fas fa-gem"></i> Premium
+                    <i className="fas fa-gem"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
@@ -427,38 +533,121 @@ const Inicio = () => {
               </div>
             </div>
             <div className="text-center mt-4 d-flex justify-content-center align-items-center">
-              <a
+              {/* Botón Sample Video #1 */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://youtu.be/ESFXezoQ8ng"
-                className="btn btn-youtube ms-3"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#FF0000", // Color de YouTube
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(255, 0, 0, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#CC0000";
+                  e.target.style.boxShadow = "0 6px 12px rgba(204, 0, 0, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#FF0000";
+                  e.target.style.boxShadow = "0 4px 8px rgba(255, 0, 0, 0.3)";
+                }}
               >
-                <i className="fab fa-youtube"></i> Sample Video #1
-              </a>
-              <a
+                <i
+                  className="fab fa-youtube me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Sample Video #1
+              </Button>
+
+              {/* Botón Buy by Telegram */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://t.me/ChetoHack_100AntiBan_8BP?text=Hola%2C%20Monaco%20%E2%99%8B%2C%0AMe%20gustar%C3%ADa%20adquirir%20una%20llave%20del%20Easy%20Victory%20Original.%0A%C2%BFPodr%C3%ADas%20indicarme%20c%C3%B3mo%20proceder%3F%20%F0%9F%A4%94%F0%9F%99%8C"
-                className="btn btn-telegram"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#007AFF", // Color de Telegram
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(0, 122, 255, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#005BB5";
+                  e.target.style.boxShadow = "0 6px 12px rgba(0, 91, 181, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#007AFF";
+                  e.target.style.boxShadow = "0 4px 8px rgba(0, 122, 255, 0.3)";
+                }}
               >
-                <i className="fab fa-telegram"></i> Buy by Telegram
-              </a>
-              <a
+                <i
+                  className="fab fa-telegram me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Buy by Telegram
+              </Button>
+
+              {/* Botón Sample Video #2 */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://youtube.com/shorts/RbgR3eUSQp8?si=wDF2PHObjcEqSu06"
-                className="btn btn-youtube ms-3"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#FF0000", // Color de YouTube
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(255, 0, 0, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#CC0000";
+                  e.target.style.boxShadow = "0 6px 12px rgba(204, 0, 0, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#FF0000";
+                  e.target.style.boxShadow = "0 4px 8px rgba(255, 0, 0, 0.3)";
+                }}
               >
-                <i className="fab fa-youtube"></i> Sample video #2
-              </a>
+                <i
+                  className="fab fa-youtube me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Sample Video #2
+              </Button>
             </div>
           </Col>
         </Row>
       </Container>
 
-      <Container fluid className="py-5" id="PSH4X-2">
+      <Container fluid className="py-3" id="PSH4X-2">
         <motion.h2
-          className="text-center mb-5"
+          className="text-center mb-3"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -479,10 +668,10 @@ const Inicio = () => {
                     <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                  <i className="fas fa-key"></i> Basic
+                    <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                  <i className="fas fa-gem"></i> Premium
+                    <i className="fas fa-gem"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
@@ -497,38 +686,121 @@ const Inicio = () => {
               </div>
             </div>
             <div className="text-center mt-4 d-flex justify-content-center align-items-center">
-              <a
+              {/* Botón Sample Video #1 */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://youtu.be/ESFXezoQ8ng"
-                className="btn btn-youtube ms-3"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#FF0000", // Color de YouTube
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(255, 0, 0, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#CC0000";
+                  e.target.style.boxShadow = "0 6px 12px rgba(204, 0, 0, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#FF0000";
+                  e.target.style.boxShadow = "0 4px 8px rgba(255, 0, 0, 0.3)";
+                }}
               >
-                <i className="fab fa-youtube"></i> Sample Video #1
-              </a>
-              <a
+                <i
+                  className="fab fa-youtube me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Sample Video #1
+              </Button>
+
+              {/* Botón Buy by Telegram */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://t.me/ChetoHack_100AntiBan_8BP?text=Hola%2C%20Monaco%20%E2%99%8B%2C%0AMe%20gustar%C3%ADa%20adquirir%20una%20llave%20del%20PSH4X%20Original.%0A%C2%BFPodr%C3%ADas%20indicarme%20c%C3%B3mo%20proceder%3F%20%F0%9F%A4%94%F0%9F%99%8C"
-                className="btn btn-telegram"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#007AFF", // Color de Telegram
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(0, 122, 255, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#005BB5";
+                  e.target.style.boxShadow = "0 6px 12px rgba(0, 91, 181, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#007AFF";
+                  e.target.style.boxShadow = "0 4px 8px rgba(0, 122, 255, 0.3)";
+                }}
               >
-                <i className="fab fa-telegram"></i> Buy by Telegram
-              </a>
-              <a
+                <i
+                  className="fab fa-telegram me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Buy by Telegram
+              </Button>
+
+              {/* Botón Sample Video #2 */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://youtube.com/shorts/RbgR3eUSQp8?si=wDF2PHObjcEqSu06"
-                className="btn btn-youtube ms-3"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#FF0000", // Color de YouTube
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(255, 0, 0, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#CC0000";
+                  e.target.style.boxShadow = "0 6px 12px rgba(204, 0, 0, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#FF0000";
+                  e.target.style.boxShadow = "0 4px 8px rgba(255, 0, 0, 0.3)";
+                }}
               >
-                <i className="fab fa-youtube"></i> Sample video #2
-              </a>
+                <i
+                  className="fab fa-youtube me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Sample video #2
+              </Button>
             </div>
           </Col>
         </Row>
       </Container>
 
-      <Container fluid className="py-5" id="AimKing-3">
+      <Container fluid className="py-3" id="AimKing-3">
         <motion.h2
-          className="text-center mb-5"
+          className="text-center mb-3"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -550,10 +822,10 @@ const Inicio = () => {
                     <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                  <i className="fas fa-key"></i> Basic
+                    <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                  <i className="fas fa-gem"></i> Premium
+                    <i className="fas fa-gem"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
@@ -575,38 +847,121 @@ const Inicio = () => {
               </div>
             </div>
             <div className="text-center mt-4 d-flex justify-content-center align-items-center">
-              <a
+              {/* Botón Sample Video #1 */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://youtu.be/ESFXezoQ8ng"
-                className="btn btn-youtube ms-3"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#FF0000", // Color de YouTube
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(255, 0, 0, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#CC0000";
+                  e.target.style.boxShadow = "0 6px 12px rgba(204, 0, 0, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#FF0000";
+                  e.target.style.boxShadow = "0 4px 8px rgba(255, 0, 0, 0.3)";
+                }}
               >
-                <i className="fab fa-youtube"></i> Sample Video #1
-              </a>
-              <a
+                <i
+                  className="fab fa-youtube me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Sample Video #1
+              </Button>
+
+              {/* Botón Buy by Telegram */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://t.me/ChetoHack_100AntiBan_8BP?text=Hola%2C%20Monaco%20%E2%99%8B%2C%0AMe%20gustar%C3%ADa%20adquirir%20una%20llave%20del%20AimKing%20Original.%0A%C2%BFPodr%C3%ADas%20indicarme%20c%C3%B3mo%20proceder%3F%20%F0%9F%A4%94%F0%9F%99%8C"
-                className="btn btn-telegram"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#007AFF", // Color de Telegram
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(0, 122, 255, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#005BB5";
+                  e.target.style.boxShadow = "0 6px 12px rgba(0, 91, 181, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#007AFF";
+                  e.target.style.boxShadow = "0 4px 8px rgba(0, 122, 255, 0.3)";
+                }}
               >
-                <i className="fab fa-telegram"></i> Buy by Telegram
-              </a>
-              <a
+                <i
+                  className="fab fa-telegram me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Buy by Telegram
+              </Button>
+
+              {/* Botón Sample Video #2 */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://youtube.com/shorts/RbgR3eUSQp8?si=wDF2PHObjcEqSu06"
-                className="btn btn-youtube ms-3"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#FF0000", // Color de YouTube
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(255, 0, 0, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#CC0000";
+                  e.target.style.boxShadow = "0 6px 12px rgba(204, 0, 0, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#FF0000";
+                  e.target.style.boxShadow = "0 4px 8px rgba(255, 0, 0, 0.3)";
+                }}
               >
-                <i className="fab fa-youtube"></i> Sample video #2
-              </a>
+                <i
+                  className="fab fa-youtube me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Sample video #2
+              </Button>
             </div>
           </Col>
         </Row>
       </Container>
 
-      <Container fluid className="py-5" id="SpiderTool-4">
+      <Container fluid className="py-3" id="SpiderTool-4">
         <motion.h2
-          className="text-center mb-5"
+          className="text-center mb-3"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -628,10 +983,10 @@ const Inicio = () => {
                     <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                  <i className="fas fa-key"></i> Basic
+                    <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                  <i className="fas fa-gem"></i> Premium
+                    <i className="fas fa-gem"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
@@ -660,38 +1015,121 @@ const Inicio = () => {
               </div>
             </div>
             <div className="text-center mt-4 d-flex justify-content-center align-items-center">
-              <a
+              {/* Botón Sample Video #1 */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://youtube.com/shorts/O-V3BohXfao?si=r8qjFNHP68P-tdBH"
-                className="btn btn-youtube ms-3"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#FF0000", // Color de YouTube
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(255, 0, 0, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#CC0000";
+                  e.target.style.boxShadow = "0 6px 12px rgba(204, 0, 0, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#FF0000";
+                  e.target.style.boxShadow = "0 4px 8px rgba(255, 0, 0, 0.3)";
+                }}
               >
-                <i className="fab fa-youtube"></i> Sample Video #1
-              </a>
-              <a
+                <i
+                  className="fab fa-youtube me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Sample Video #1
+              </Button>
+
+              {/* Botón Buy by Telegram */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://t.me/ChetoHack_100AntiBan_8BP?text=Hola%2C%20Monaco%20%E2%99%8B%2C%0AMe%20gustar%C3%ADa%20adquirir%20una%20llave%20del%20Spider%20Tool%20Original.%0A%C2%BFPodr%C3%ADas%20indicarme%20c%C3%B3mo%20proceder%3F%20%F0%9F%A4%94%F0%9F%99%8C"
-                className="btn btn-telegram"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#007AFF", // Color de Telegram
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(0, 122, 255, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#005BB5";
+                  e.target.style.boxShadow = "0 6px 12px rgba(0, 91, 181, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#007AFF";
+                  e.target.style.boxShadow = "0 4px 8px rgba(0, 122, 255, 0.3)";
+                }}
               >
-                <i className="fab fa-telegram"></i> Buy by Telegram
-              </a>
-              <a
+                <i
+                  className="fab fa-telegram me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Buy by Telegram
+              </Button>
+
+              {/* Botón Sample Video #2 */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://youtube.com/shorts/u3DzIa6IV4A"
-                className="btn btn-youtube ms-3"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#FF0000", // Color de YouTube
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(255, 0, 0, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#CC0000";
+                  e.target.style.boxShadow = "0 6px 12px rgba(204, 0, 0, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#FF0000";
+                  e.target.style.boxShadow = "0 4px 8px rgba(255, 0, 0, 0.3)";
+                }}
               >
-                <i className="fab fa-youtube"></i> Sample video #2
-              </a>
+                <i
+                  className="fab fa-youtube me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Sample video #2
+              </Button>
             </div>
           </Col>
         </Row>
       </Container>
 
-      <Container fluid className="py-5" id="Snake-5">
+      <Container fluid className="py-3" id="Snake-5">
         <motion.h2
-          className="text-center mb-5"
+          className="text-center mb-3"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -712,10 +1150,10 @@ const Inicio = () => {
                     <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                  <i className="fas fa-key"></i> Basic
+                    <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                  <i className="fas fa-gem"></i> Premium
+                    <i className="fas fa-gem"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
@@ -744,36 +1182,123 @@ const Inicio = () => {
               </div>
             </div>
             <div className="text-center mt-4 d-flex justify-content-center align-items-center">
-              <a
+              {/* Botón Sample Video #1 */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://youtube.com/shorts/O-V3BohXfao?si=r8qjFNHP68P-tdBH"
-                className="btn btn-youtube ms-3"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#FF0000", // Color de YouTube
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(255, 0, 0, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#CC0000";
+                  e.target.style.boxShadow = "0 6px 12px rgba(204, 0, 0, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#FF0000";
+                  e.target.style.boxShadow = "0 4px 8px rgba(255, 0, 0, 0.3)";
+                }}
               >
-                <i className="fab fa-youtube"></i> Sample Video #1
-              </a>
-              <a
+                <i
+                  className="fab fa-youtube me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Sample Video #1
+              </Button>
+
+              {/* Botón Buy by Telegram */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://t.me/ChetoHack_100AntiBan_8BP?text=Hola%2C%20Monaco%20%E2%99%8B%2C%0AMe%20gustar%C3%ADa%20adquirir%20una%20llave%20del%20Spider%20Tool%20Original.%0A%C2%BFPodr%C3%ADas%20indicarme%20c%C3%B3mo%20proceder%3F%20%F0%9F%A4%94%F0%9F%99%8C"
-                className="btn btn-telegram"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#007AFF", // Color de Telegram
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(0, 122, 255, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#005BB5";
+                  e.target.style.boxShadow = "0 6px 12px rgba(0, 91, 181, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#007AFF";
+                  e.target.style.boxShadow = "0 4px 8px rgba(0, 122, 255, 0.3)";
+                }}
               >
-                <i className="fab fa-telegram"></i> Buy by Telegram
-              </a>
-              <a
+                <i
+                  className="fab fa-telegram me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Buy by Telegram
+              </Button>
+
+              {/* Botón Sample Video #2 */}
+              <Button
+                variant="outline-light"
+                className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
                 href="https://youtube.com/shorts/u3DzIa6IV4A"
-                className="btn btn-youtube ms-3"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  fontWeight: "bold",
+                  maxWidth: "250px",
+                  width: "auto",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  backgroundColor: "#FF0000", // Color de YouTube
+                  color: "#FFFFFF",
+                  borderRadius: "50px",
+                  boxShadow: "0 4px 8px rgba(255, 0, 0, 0.3)",
+                  transition: "all 0.3s ease",
+                  textTransform: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = "#CC0000";
+                  e.target.style.boxShadow = "0 6px 12px rgba(204, 0, 0, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = "#FF0000";
+                  e.target.style.boxShadow = "0 4px 8px rgba(255, 0, 0, 0.3)";
+                }}
               >
-                <i className="fab fa-youtube"></i> Sample video #2
-              </a>
+                <i
+                  className="fab fa-youtube me-2"
+                  style={{ fontSize: "20px" }}
+                ></i>
+                Sample video #2
+              </Button>
             </div>
           </Col>
         </Row>
       </Container>
 
-      <Container fluid className="py-5" style={{ backgroundColor: "#FFFFFF" }}>
+      <Container
+        fluid
+        className="py-5"
+        style={{ backgroundColor: "rgb(34, 36, 47)" }}
+      >
         <Row className="justify-content-center">
           <Col md={10}>
             <Row className="align-items-center">
@@ -785,19 +1310,9 @@ const Inicio = () => {
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.8 }}
                 >
-                  Improve Your Game
+                  Convert the hack prices to your local currency here.
                 </motion.h2>
-                <motion.p
-                  className="mb-4"
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ duration: 1 }}
-                  style={{ color: "#757575" }}
-                >
-                  Take advantage of exclusive products from MonacoShop to
-                  improve your performance in 8 Ball Pool. Each tool is designed
-                  to optimize your gaming experience safely and effectively.
-                </motion.p>
+
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -805,7 +1320,7 @@ const Inicio = () => {
                   <Button
                     variant="info"
                     href="/convert.html"
-                    className="px-4 py-2 fw-bold"
+                    className="px-4 py-3 fw-bold"
                     style={{
                       backgroundColor: "#007AFF",
                       color: "#FFFFFF",
@@ -828,83 +1343,10 @@ const Inicio = () => {
                   </Button>
                 </motion.div>
               </Col>
-              <Col md={6}>
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ duration: 0.8 }}
-                >
-                  <Card
-                    className="shadow-sm"
-                    style={{ backgroundColor: "#FFFFFF" }}
-                  >
-                    <Card.Body className="text-center">
-                      <img
-                        src="/Logo.png"
-                        alt="Mejorar tu rendimiento"
-                        style={{ width: "64px", height: "64px" }}
-                        className="mb-3"
-                      />
-                      <Card.Title
-                        className="fw-bold"
-                        style={{ color: "#007AFF" }}
-                      >
-                        Improve Your Performance
-                      </Card.Title>
-                      <Card.Text style={{ color: "#757575" }}>
-                        Take your game to the next level with products
-                        specifically designed to improve your skills and
-                        strategies.
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </motion.div>
-              </Col>
             </Row>
           </Col>
         </Row>
       </Container>
-
-      <footer
-        className="bg-light text-dark py-4 mt-auto"
-        style={{ backgroundColor: "#FFFFFF" }}
-      >
-        <Container>
-          <Row>
-            <Col className="text-center">
-              <p className="mb-0">
-                &copy; 2025 MonacoShop. All rights reserved.
-              </p>
-              <div className="social-icons">
-                <motion.a
-                  href="https://facebook.com"
-                  whileHover={{ scale: 1.2 }}
-                  className="text-dark mx-2"
-                  aria-label="Facebook"
-                >
-                  <FaFacebookF size={24} />
-                </motion.a>
-                <motion.a
-                  href="https://x.com"
-                  whileHover={{ scale: 1.2 }}
-                  className="text-dark mx-2"
-                  aria-label="Twitter"
-                >
-                  <BsTwitterX size={24} />
-                </motion.a>
-                <motion.a
-                  href="https://instagram.com"
-                  whileHover={{ scale: 1.2 }}
-                  className="text-dark mx-2"
-                  aria-label="Instagram"
-                >
-                  <FaInstagram size={24} />
-                </motion.a>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </footer>
     </div>
   );
 };
