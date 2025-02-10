@@ -115,6 +115,7 @@ const Inicio = () => {
                   Discover more <FaChevronRight className="ms-2" />
                 </Button>
               </motion.div>
+
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <Button
                   variant="outline-light"
@@ -133,14 +134,14 @@ const Inicio = () => {
                     boxShadow: "0 4px 6px rgba(255, 255, 255, 0.2)",
                     transition: "all 0.3s ease",
                   }}
-                  onMouseEnter={(e) =>
-                    (e.target.style.backgroundColor = "#606060")
+                  onMouseEnter={
+                    (e) => (e.target.style.backgroundColor = "#198754") // Mantén el verde
                   }
-                  onMouseLeave={(e) =>
-                    (e.target.style.backgroundColor = "transparent")
+                  onMouseLeave={
+                    (e) => (e.target.style.backgroundColor = "#198754") // Mantén el verde al salir
                   }
                 >
-                  Monaco Converter! <FaChevronRight className="ms-2" />
+                  Monaco Converter <FaChevronRight className="ms-2" />
                 </Button>
               </motion.div>
             </div>
