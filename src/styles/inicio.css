@@ -563,15 +563,36 @@ motion.h2 {
 .permanent-plan-card {
   background-color: #fff;
   border-radius: 50px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  padding: 25px;
   width: 500px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.permanent-plan-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 215, 0, 0.2); /* Light yellow overlay */
+  border-radius: 50px;
+  z-index: -1;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .permanent-plan-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
+
+.permanent-plan-card:hover::before {
+  opacity: 0.3; /* Enhance the yellow glow on hover */
+}
+
 
 .plan-header {
   display: flex;
