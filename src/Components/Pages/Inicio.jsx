@@ -98,7 +98,7 @@ const Inicio = () => {
               />
             </div>
             <h1 className="mb-4 fw-bold" style={{ color: "#FFFFFF" }}>
-              <i className="fas fa-tshirt"></i>Welcome to, 𝗣𝗥𝗢 𝗣𝗟𝗔𝗬𝗘𝗥𝗦 𝗦𝗧𝗢𝗥𝗘
+              Welcome to, 𝗣𝗥𝗢 𝗣𝗟𝗔𝗬𝗘𝗥𝗦 𝗦𝗧𝗢𝗥𝗘
               <br />
               The most professional and secure service on the market.
             </h1>
@@ -218,8 +218,7 @@ const Inicio = () => {
                     <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                    <i className="fas fa-headset"></i> Premium
-                    soporte
+                    <i className="fas fa-headset"></i> Premium soporte
                   </span>
                 </div>
                 <div className="permanent-plan-info">
@@ -489,8 +488,7 @@ const Inicio = () => {
                     <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                    <i className="fas fa-headset"></i> Premium
-                    soporte
+                    <i className="fas fa-headset"></i> Premium soporte
                   </span>
                 </div>
                 <div className="permanent-plan-info">
@@ -749,10 +747,9 @@ const Inicio = () => {
                   transition={{ duration: 1 }}
                   style={{ color: "#757575" }}
                 >
-                  Take advantage of exclusive products from MonacoShop to improve
-your performance in 8 Ball Pool. Each tool is designed
-to optimize your gaming experience safely and
-effectively.
+                  Take advantage of exclusive products from MonacoShop to
+                  improve your performance in 8 Ball Pool. Each tool is designed
+                  to optimize your gaming experience safely and effectively.
                 </motion.p>
                 <motion.div
                   whileHover={{ scale: 1.1 }}
@@ -808,7 +805,9 @@ effectively.
                         Improve Your Performance
                       </Card.Title>
                       <Card.Text style={{ color: "#757575" }}>
-                      Take your game to the next level with products specifically designed to improve your skills and strategies.
+                        Take your game to the next level with products
+                        specifically designed to improve your skills and
+                        strategies.
                       </Card.Text>
                     </Card.Body>
                   </Card>
