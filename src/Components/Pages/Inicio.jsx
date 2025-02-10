@@ -93,9 +93,9 @@ const Inicio = () => {
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <Button
                   variant="outline-light"
-                  href="#nuestros-productos"
+                  href="https://t.me/addlist/ic7ljy-1hEVkYTdh"
                   className="px-4 py-2 fw-bold"
-                  aria-label="Descubre más"
+                  aria-label="Discover more"
                   style={{
                     borderColor: "#FFFFFF",
                     color: "#FFFFFF",
