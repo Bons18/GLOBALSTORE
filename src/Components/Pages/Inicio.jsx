@@ -378,7 +378,7 @@ const Inicio = () => {
             color: "rgb(227, 165, 25)",
           }} /* Hacemos el título más grueso y añadimos color */
         >
-<img src="/public/EasyVictory.png" alt="Easy Victory" className="easy-victory-icon" /> Easy Victory
+<img src="/EasyVictory.png" alt="Easy Victory" className="easy-victory-icon" /> Easy Victory
 </motion.h2>
 
         <Row className="d-flex justify-content-center">
