@@ -73,8 +73,7 @@ const Inicio = () => {
 
   const handleMoreInfo = (productName) => {
     const info = {
-      "Easy Victory":
-        "Easy Victory es una herramienta de trucos de Pago y gratuita para mejorar la experiencia en el juego 8 Ball Pool, diseñada especialmente para jugadores que quieren mejorar sus habilidades y obtener victorias rápidas. Sus características incluyen:\n\n- Auto Aiming y Tiro: Mejora la puntería y permite disparos más precisos.\n- Predicciones de Tiros: Muestra líneas de trayectoria para mejorar la precisión.\n- Cola Automática: Permite jugar automáticamente después de cada partida.\n- Bloqueo de Anuncios: Elimina anuncios molestos durante el juego.\n- Retraso Aleatorio: Hace que los movimientos parezcan naturales, evitando ser detectado por los filtros de seguridad del juego.\n\nAdemás, ofrece características Anti Ban y Anti Detect, que protegen al jugador de ser expulsado del juego. No está afiliada al juego oficial, pero está diseñada para mejorar la experiencia sin comprometer la seguridad.",
+      "Easy Victory": "",
     };
     setProductInfo(info[productName] || "");
     setShowModal(true);
@@ -87,7 +86,7 @@ const Inicio = () => {
         initial="hidden"
         animate="visible"
         variants={fadeIn}
-        style={{ backgroundColor: 'rgb(34, 36, 47)', color: '#FFFFFF' }}
+        style={{ backgroundColor: "rgb(34, 36, 47)", color: "#FFFFFF" }}
       >
         <Row className="justify-content-center">
           <Col md={8}>
@@ -99,48 +98,47 @@ const Inicio = () => {
               />
             </div>
             <h1 className="mb-4 fw-bold" style={{ color: "#FFFFFF" }}>
-    <i className="fas fa-tshirt"></i> Bienvenid@ a, 𝗣𝗥𝗢 𝗣𝗟𝗔𝗬𝗘𝗥𝗦 𝗦𝗧𝗢𝗥𝗘
-    <br />
-    El servicio más Pro y seguro del mercado.
-</h1>
+              <i className="fas fa-tshirt"></i>Welcome to, 𝗣𝗥𝗢 𝗣𝗟𝗔𝗬𝗘𝗥𝗦 𝗦𝗧𝗢𝗥𝗘
+              <br />
+              The most professional and secure service on the market.
+            </h1>
 
-<p className="lead mb-4" style={{ color: "#FFFFFF" }}>
-    Aquí encontrarás las mejores soluciones para mejorar tu experiencia en 8 Ball Pool. 
-    Desde hacks exclusivos hasta trucos avanzados 100% anti ban. 
-    ¡Haz que cada movimiento cuente con MonacoShop!
-</p>
+            <p className="lead mb-4" style={{ color: "#FFFFFF" }}>
+              Here you will find the best solutions to improve your 8 Ball Pool
+              experience. From exclusive hacks to advanced 100% anti-ban tricks.
+              Make every move count with MonacoShop!
+            </p>
 
-<div className="d-flex justify-content-center gap-3">
-    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-        <Button
-            variant="outline-light"
-            href="#nuestros-productos"
-            className="px-4 py-2 fw-bold"
-            aria-label="Descubre más"
-            style={{
-                borderColor: "#FFFFFF",
-                color: "#FFFFFF",
-                backgroundColor: "transparent",
-                borderRadius: "12px",
-                padding: "12px 24px",
-                fontSize: "16px",
-                fontWeight: "600",
-                textTransform: "uppercase",
-                boxShadow: "0 4px 6px rgba(255, 255, 255, 0.2)",
-                transition: "all 0.3s ease",
-            }}
-            onMouseEnter={(e) =>
-                (e.target.style.backgroundColor = "#606060")
-            }
-            onMouseLeave={(e) =>
-                (e.target.style.backgroundColor = "transparent")
-            }
-        >
-            Descubre más <FaChevronRight className="ms-2" />
-        </Button>
-    </motion.div>
-</div>
-
+            <div className="d-flex justify-content-center gap-3">
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <Button
+                  variant="outline-light"
+                  href="#nuestros-productos"
+                  className="px-4 py-2 fw-bold"
+                  aria-label="Descubre más"
+                  style={{
+                    borderColor: "#FFFFFF",
+                    color: "#FFFFFF",
+                    backgroundColor: "transparent",
+                    borderRadius: "12px",
+                    padding: "12px 24px",
+                    fontSize: "16px",
+                    fontWeight: "600",
+                    textTransform: "uppercase",
+                    boxShadow: "0 4px 6px rgba(255, 255, 255, 0.2)",
+                    transition: "all 0.3s ease",
+                  }}
+                  onMouseEnter={(e) =>
+                    (e.target.style.backgroundColor = "#606060")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.target.style.backgroundColor = "transparent")
+                  }
+                >
+                  Discover more <FaChevronRight className="ms-2" />
+                </Button>
+              </motion.div>
+            </div>
           </Col>
         </Row>
       </motion.div>
@@ -153,7 +151,7 @@ const Inicio = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
-          NUESTROS PRODUCTOS
+          AVAILABLE PRODUCTS
         </motion.h2>
         <Row>
           {[
@@ -161,25 +159,25 @@ const Inicio = () => {
               image: "/EasyVictory.png",
               title: "Easy Victory",
               description:
-                "Disfruta de hacks 100% anti-ban diseñados para mejorar tu experiencia en el juego.",
+                "Enjoy 100% anti-ban hacks designed to enhance your gaming experience.",
             },
             {
               image: "/spider.png",
-              title: "Spider Tool Original",
+              title: "Spider Tool",
               description:
-                "“SpiderTool” presenta una solución sencilla y eficiente para mejorar tu juego en 8 Ball Pool.",
+                "presents a simple and efficient solution to improve your game in 8 Ball Pool.",
             },
             {
               image: "/PSH4.png",
-              title: "PSH4X Original",
+              title: "PSH4X",
               description:
-                "Accede a trucos avanzados para dominar el juego y mejorar tus habilidades.",
+                "Access advanced tricks to master the game and improve your skills.",
             },
             {
               image: "/AimKing.jpg",
               title: "AimKing Original",
               description:
-                "Optimiza tu rendimiento con herramientas exclusivas para 8 Ball Pool.",
+                "Optimize your performance with exclusive tools for 8 Ball Pool.",
             },
           ].map((service) => (
             <ServiceCard
@@ -204,7 +202,7 @@ const Inicio = () => {
             color: "rgb(255, 87, 34)",
           }} /* Color cálido y vibrante */
         >
-          <i className="fas fa-cogs"></i> PLANES FLEXIBLES DE AYUDA (HORAS)
+          <i className="fas fa-cogs"></i> FLEXIBLE AID PLANS
         </motion.h2>
 
         <Row className="d-flex justify-content-center">
@@ -214,41 +212,41 @@ const Inicio = () => {
               <div className="permanent-plan-card">
                 <div className="plan-header">
                   <span>
-                    <i className="fas fa-clock"></i> Duración
+                    <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                    <i className="fas fa-key"></i> Precio solo de llave
+                    <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                    <i className="fas fa-headset"></i> Precio de llave con
+                    <i className="fas fa-headset"></i> Premium
                     soporte
                   </span>
                 </div>
                 <div className="permanent-plan-info">
                   <div className="plan-details">
                     <span>
-                      <i className="fas fa-hourglass-start"></i> 1 hora:
+                      <i className="fas fa-hourglass-start"></i> 1 hours:
                     </span>
                     <span className="price">USDT 2,00</span>
                     <span className="price-with-support">USDT 2,00</span>
                   </div>
                   <div className="plan-details">
                     <span>
-                      <i className="fas fa-hourglass-half"></i> 3 horas:
+                      <i className="fas fa-hourglass-half"></i> 3 hours:
                     </span>
                     <span className="price">USDT 3,00</span>
                     <span className="price-with-support">USDT 3,00</span>
                   </div>
                   <div className="plan-details">
                     <span>
-                      <i className="fas fa-hourglass-end"></i> 6 horas:
+                      <i className="fas fa-hourglass-end"></i> 6 hours:
                     </span>
                     <span className="price">USDT 4,00</span>
                     <span className="price-with-support">USDT 4,00</span>
                   </div>
                   <div className="plan-details">
                     <span>
-                      <i className="fas fa-clock"></i> 12 horas:
+                      <i className="fas fa-clock"></i> 12 hours:
                     </span>
                     <span className="price">USDT 5,00</span>
                     <span className="price-with-support">USDT 5,00</span>
@@ -263,7 +261,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-youtube"></i> Vídeo de muestra #1
+                <i className="fab fa-youtube"></i> Sample Video #1
               </a>
               <a
                 href="https://t.me/ChetoHack_100AntiBan_8BP?text=Me%20gustar%C3%ADa%20adquirir%20un%20PLAN%20FLEXIBLE%20DE%20AYUDA%20%28HORAS%29%20%E2%8F%B3%F0%9F%94%91.%20%C2%BFPodr%C3%ADas%20indicarme%20c%C3%B3mo%20proceder%3F%20%F0%9F%A4%94%F0%9F%99%8C"
@@ -271,7 +269,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-telegram"></i> Contactar por Telegram
+                <i className="fab fa-telegram"></i> Contact by Telegram
               </a>
               <a
                 href="https://youtube.com/shorts/RbgR3eUSQp8?si=wDF2PHObjcEqSu06"
@@ -279,7 +277,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-youtube"></i> Vídeo de muestra #2
+                <i className="fab fa-youtube"></i> Sample video #2
               </a>
             </div>
           </Col>
@@ -294,7 +292,7 @@ const Inicio = () => {
           transition={{ duration: 0.8 }}
           style={{ fontWeight: "bold", color: "#007bff" }} /* Azul brillante */
         >
-          <i className="fas fa-calendar-check"></i> PLANES PERMANENTES
+          <i className="fas fa-calendar-check"></i> PERMANENT PLANS
         </motion.h2>
 
         <Row className="d-flex justify-content-center">
@@ -303,48 +301,47 @@ const Inicio = () => {
               <div className="permanent-plan-card">
                 <div className="plan-header">
                   <span>
-                    <i className="fas fa-clock"></i> Duración
+                    <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                    <i className="fas fa-key"></i> Precio solo de llave
+                    <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                    <i className="fas fa-headset"></i> Precio de llave con
-                    soporte
+                    <i className="fas fa-headset"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
                   <div className="plan-details">
                     <span>
-                      <i className="fas fa-hourglass-start"></i> 24 horas:
+                      <i className="fas fa-hourglass-start"></i> 24 hours:
                     </span>
                     <span className="price">USDT 6,00</span>
                     <span className="price-with-support">USDT 6,00</span>
                   </div>
                   <div className="plan-details">
                     <span>
-                      <i className="fas fa-hourglass-half"></i> 72 horas:
+                      <i className="fas fa-hourglass-half"></i> 72 hours:
                     </span>
                     <span className="price">USDT 8,00</span>
                     <span className="price-with-support">USDT 8,00</span>
                   </div>
                   <div className="plan-details">
                     <span>
-                      <i className="fas fa-calendar-day"></i> 30 días:
+                      <i className="fas fa-calendar-day"></i> 30 days:
                     </span>
                     <span className="price">USDT 20,00</span>
                     <span className="price-with-support">USDT 20,00</span>
                   </div>
                   <div className="plan-details">
                     <span>
-                      <i className="fas fa-calendar-alt"></i> 365 días:
+                      <i className="fas fa-calendar-alt"></i> 365 days:
                     </span>
                     <span className="price">USDT 35,00</span>
                     <span className="price-with-support">USDT 35,00</span>
                   </div>
                   <div className="plan-details">
                     <span>
-                      <i className="fas fa-infinity"></i> Para siempre:
+                      <i className="fas fa-infinity"></i> Forever:
                     </span>
                     <span className="price">USDT 50,00</span>
                     <span className="price-with-support">USDT 50,00</span>
@@ -359,7 +356,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-youtube"></i> Vídeo de muestra #1
+                <i className="fab fa-youtube"></i> Sample Video #1
               </a>
               <a
                 href="https://t.me/ChetoHack_100AntiBan_8BP?text=Hola%2C%20Monaco%20%E2%99%8B%2C%0AMe%20gustar%C3%ADa%20adquirir%20una%20llave%20de%20la%20categor%C3%ADa%20PERMANENTE%20%F0%9F%94%91.%0A%C2%BFPodr%C3%ADas%20indicarme%20c%C3%B3mo%20proceder%3F%20%F0%9F%A4%94%F0%9F%99%8C"
@@ -367,7 +364,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-telegram"></i> Contactar por Telegram
+                <i className="fab fa-telegram"></i> Contact by Telegram
               </a>
               <a
                 href="https://youtube.com/shorts/RbgR3eUSQp8?si=wDF2PHObjcEqSu06"
@@ -375,7 +372,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-youtube"></i> Vídeo de muestra #2
+                <i className="fab fa-youtube"></i> Sample video #2
               </a>
             </div>
           </Col>
@@ -393,7 +390,7 @@ const Inicio = () => {
             color: "rgb(227, 165, 25)",
           }} /* Hacemos el título más grueso y añadimos color */
         >
-          <i className="fas fa-trophy"></i> Easy Victory Original
+          <i className="fas fa-trophy"></i> Easy Victory
         </motion.h2>
 
         <Row className="d-flex justify-content-center">
@@ -402,34 +399,33 @@ const Inicio = () => {
               <div className="permanent-plan-card">
                 <div className="plan-header">
                   <span>
-                    <i className="fas fa-clock"></i> Duración
+                    <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                    <i className="fas fa-key"></i> Precio solo de llave
+                    <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                    <i className="fas fa-headset"></i> Precio de llave con
-                    soporte
+                    <i className="fas fa-headset"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
                   <div className="plan-details">
                     <span>
-                      <i className="fas fa-calendar-week"></i> 7 días:
+                      <i className="fas fa-calendar-week"></i> 7 days:
                     </span>
                     <span className="price">USDT 10,00</span>
                     <span className="price-with-support">USDT 15,00</span>
                   </div>
                   <div className="plan-details">
                     <span>
-                      <i className="fas fa-calendar-day"></i> 15 días:
+                      <i className="fas fa-calendar-day"></i> 15 days:
                     </span>
                     <span className="price">USDT 17,50</span>
                     <span className="price-with-support">USDT 20,00</span>
                   </div>
                   <div className="plan-details">
                     <span>
-                      <i className="fas fa-calendar-alt"></i> 30 días:
+                      <i className="fas fa-calendar-alt"></i> 30 days:
                     </span>
                     <span className="price">USDT 25,00</span>
                     <span className="price-with-support">USDT 30,00</span>
@@ -444,7 +440,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-youtube"></i> Vídeo de muestra #1
+                <i className="fab fa-youtube"></i> Sample Video #1
               </a>
               <a
                 href="https://t.me/ChetoHack_100AntiBan_8BP?text=Hola%2C%20Monaco%20%E2%99%8B%2C%0AMe%20gustar%C3%ADa%20adquirir%20una%20llave%20del%20Easy%20Victory%20Original.%0A%C2%BFPodr%C3%ADas%20indicarme%20c%C3%B3mo%20proceder%3F%20%F0%9F%A4%94%F0%9F%99%8C"
@@ -452,7 +448,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-telegram"></i> Contactar por Telegram
+                <i className="fab fa-telegram"></i> Contact by Telegram
               </a>
               <a
                 href="https://youtube.com/shorts/RbgR3eUSQp8?si=wDF2PHObjcEqSu06"
@@ -460,7 +456,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-youtube"></i> Vídeo de muestra #2
+                <i className="fab fa-youtube"></i> Sample video #2
               </a>
             </div>
           </Col>
@@ -478,7 +474,7 @@ const Inicio = () => {
             color: "rgb(127, 197, 236)",
           }} /* Hacemos el título más grueso y añadimos color */
         >
-          <i className="fas fa-plug"></i> PSH4X Original
+          <i className="fas fa-plug"></i> PSH4X
         </motion.h2>
 
         <Row className="d-flex justify-content-center">
@@ -487,20 +483,20 @@ const Inicio = () => {
               <div className="permanent-plan-card">
                 <div className="plan-header">
                   <span>
-                    <i className="fas fa-clock"></i> Duración
+                    <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                    <i className="fas fa-key"></i> Precio solo de llave
+                    <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                    <i className="fas fa-headset"></i> Precio de llave con
+                    <i className="fas fa-headset"></i> Premium
                     soporte
                   </span>
                 </div>
                 <div className="permanent-plan-info">
                   <div className="plan-details">
                     <span>
-                      <i className="fas fa-calendar-alt"></i> 30 días:
+                      <i className="fas fa-calendar-alt"></i> 30 days:
                     </span>
                     <span className="price">USDT 25,00</span>
                     <span className="price-with-support">USDT 30,00</span>
@@ -515,7 +511,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-youtube"></i> Vídeo de muestra #1
+                <i className="fab fa-youtube"></i> Sample Video #1
               </a>
               <a
                 href="https://t.me/ChetoHack_100AntiBan_8BP?text=Hola%2C%20Monaco%20%E2%99%8B%2C%0AMe%20gustar%C3%ADa%20adquirir%20una%20llave%20del%20PSH4X%20Original.%0A%C2%BFPodr%C3%ADas%20indicarme%20c%C3%B3mo%20proceder%3F%20%F0%9F%A4%94%F0%9F%99%8C"
@@ -523,7 +519,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-telegram"></i> Contactar por Telegram
+                <i className="fab fa-telegram"></i> Contact by Telegram
               </a>
               <a
                 href="https://youtube.com/shorts/RbgR3eUSQp8?si=wDF2PHObjcEqSu06"
@@ -531,7 +527,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-youtube"></i> Vídeo de muestra #2
+                <i className="fab fa-youtube"></i> Sample video #2
               </a>
             </div>
           </Col>
@@ -549,7 +545,7 @@ const Inicio = () => {
             color: "rgb(129, 6, 9)",
           }} /* Hacemos el título más grueso y añadimos color */
         >
-          <i className="fas fa-bullseye"></i> AimKing Original
+          <i className="fas fa-bullseye"></i> AimKing
         </motion.h2>
 
         <Row className="d-flex justify-content-center">
@@ -558,27 +554,26 @@ const Inicio = () => {
               <div className="permanent-plan-card">
                 <div className="plan-header">
                   <span>
-                    <i className="fas fa-clock"></i> Duración
+                    <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                    <i className="fas fa-key"></i> Precio solo de llave
+                    <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                    <i className="fas fa-headset"></i> Precio de llave con
-                    soporte
+                    <i className="fas fa-headset"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
                   <div className="plan-details">
                     <span>
-                      <i className="fas fa-calendar-alt"></i> 7 días:
+                      <i className="fas fa-calendar-alt"></i> 7 days:
                     </span>
                     <span className="price">USDT 15,00</span>
                     <span className="price-with-support">USDT 20,00</span>
                   </div>
                   <div className="plan-details">
                     <span>
-                      <i className="fas fa-calendar-alt"></i> 30 días:
+                      <i className="fas fa-calendar-alt"></i> 30 days:
                     </span>
                     <span className="price">USDT 30,00</span>
                     <span className="price-with-support">USDT 35,00</span>
@@ -593,7 +588,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-youtube"></i> Vídeo de muestra #1
+                <i className="fab fa-youtube"></i> Sample Video #1
               </a>
               <a
                 href="https://t.me/ChetoHack_100AntiBan_8BP?text=Hola%2C%20Monaco%20%E2%99%8B%2C%0AMe%20gustar%C3%ADa%20adquirir%20una%20llave%20del%20AimKing%20Original.%0A%C2%BFPodr%C3%ADas%20indicarme%20c%C3%B3mo%20proceder%3F%20%F0%9F%A4%94%F0%9F%99%8C"
@@ -601,7 +596,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-telegram"></i> Contactar por Telegram
+                <i className="fab fa-telegram"></i> Contact by Telegram
               </a>
               <a
                 href="https://youtube.com/shorts/RbgR3eUSQp8?si=wDF2PHObjcEqSu06"
@@ -609,7 +604,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-youtube"></i> Vídeo de muestra #2
+                <i className="fab fa-youtube"></i> Sample video #2
               </a>
             </div>
           </Col>
@@ -627,7 +622,7 @@ const Inicio = () => {
             color: "rgb(244, 124, 23)",
           }} /* Hacemos el título más grueso y añadimos color */
         >
-          <i className="fas fa-spider"></i> Spider Tool Original
+          <i className="fas fa-spider"></i> Spider Tool
         </motion.h2>
 
         <Row className="d-flex justify-content-center">
@@ -636,34 +631,33 @@ const Inicio = () => {
               <div className="permanent-plan-card">
                 <div className="plan-header">
                   <span>
-                    <i className="fas fa-clock"></i> Duración
+                    <i className="fas fa-clock"></i> Duration
                   </span>
                   <span>
-                    <i className="fas fa-key"></i> Precio solo de llave
+                    <i className="fas fa-key"></i> Basic
                   </span>
                   <span>
-                    <i className="fas fa-headset"></i> Precio de llave con
-                    soporte
+                    <i className="fas fa-headset"></i> Premium
                   </span>
                 </div>
                 <div className="permanent-plan-info">
                   <div className="plan-details">
                     <span>
-                      <i className="fas fa-calendar-alt"></i> 3 días:
+                      <i className="fas fa-calendar-alt"></i> 3 days:
                     </span>
                     <span className="price">USDT 6,00</span>
                     <span className="price-with-support">USDT 6,00</span>
                   </div>
                   <div className="plan-details">
                     <span>
-                      <i className="fas fa-calendar-alt"></i> 7 días:
+                      <i className="fas fa-calendar-alt"></i> 7 days:
                     </span>
                     <span className="price">USDT 12,00</span>
                     <span className="price-with-support">USDT 12,00</span>
                   </div>
                   <div className="plan-details">
                     <span>
-                      <i className="fas fa-calendar-alt"></i> 30 días:
+                      <i className="fas fa-calendar-alt"></i> 30 days:
                     </span>
                     <span className="price">USDT 17,00</span>
                     <span className="price-with-support">USDT 17,00</span>
@@ -678,7 +672,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-youtube"></i> Vídeo de muestra #1
+                <i className="fab fa-youtube"></i> Sample Video #1
               </a>
               <a
                 href="https://t.me/ChetoHack_100AntiBan_8BP?text=Hola%2C%20Monaco%20%E2%99%8B%2C%0AMe%20gustar%C3%ADa%20adquirir%20una%20llave%20del%20Spider%20Tool%20Original.%0A%C2%BFPodr%C3%ADas%20indicarme%20c%C3%B3mo%20proceder%3F%20%F0%9F%A4%94%F0%9F%99%8C"
@@ -686,7 +680,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-telegram"></i> Contactar por Telegram
+                <i className="fab fa-telegram"></i> Contact by Telegram
               </a>
               <a
                 href="https://youtube.com/shorts/u3DzIa6IV4A"
@@ -694,7 +688,7 @@ const Inicio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-youtube"></i> Vídeo de muestra #2
+                <i className="fab fa-youtube"></i> Sample video #2
               </a>
             </div>
           </Col>
@@ -708,7 +702,7 @@ const Inicio = () => {
         centered
       >
         <Modal.Header closeButton>
-          <Modal.Title>Información de Producto</Modal.Title>
+          <Modal.Title>Product Information</Modal.Title>
         </Modal.Header>
         <Modal.Body style={{ maxHeight: "80vh", overflowY: "auto" }}>
           <div style={{ whiteSpace: "pre-wrap", wordWrap: "break-word" }}>
@@ -746,7 +740,7 @@ const Inicio = () => {
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.8 }}
                 >
-                  Mejora Tu Juego
+                  Improve Your Game
                 </motion.h2>
                 <motion.p
                   className="mb-4"
@@ -755,10 +749,10 @@ const Inicio = () => {
                   transition={{ duration: 1 }}
                   style={{ color: "#757575" }}
                 >
-                  Aprovecha los productos exclusivos de MonacoShop para mejorar
-                  tu rendimiento en 8 Ball Pool. Cada herramienta está diseñada
-                  para optimizar tu experiencia de juego de manera segura y
-                  efectiva.
+                  Take advantage of exclusive products from MonacoShop to improve
+your performance in 8 Ball Pool. Each tool is designed
+to optimize your gaming experience safely and
+effectively.
                 </motion.p>
                 <motion.div
                   whileHover={{ scale: 1.1 }}
@@ -786,7 +780,7 @@ const Inicio = () => {
                       (e.target.style.backgroundColor = "#007AFF")
                     }
                   >
-                    Convertidor Monaco! <FaChevronRight className="ms-2" />
+                    Monaco Converter! <FaChevronRight className="ms-2" />
                   </Button>
                 </motion.div>
               </Col>
@@ -811,12 +805,10 @@ const Inicio = () => {
                         className="fw-bold"
                         style={{ color: "#007AFF" }}
                       >
-                        Mejorar Tu Rendimiento
+                        Improve Your Performance
                       </Card.Title>
                       <Card.Text style={{ color: "#757575" }}>
-                        Lleva tu juego al siguiente nivel con productos
-                        diseñados específicamente para mejorar tus habilidades y
-                        estrategias.
+                      Take your game to the next level with products specifically designed to improve your skills and strategies.
                       </Card.Text>
                     </Card.Body>
                   </Card>
@@ -835,7 +827,7 @@ const Inicio = () => {
           <Row>
             <Col className="text-center">
               <p className="mb-0">
-                &copy; 2025 MonacoShop. Todos los derechos reservados.
+                &copy; 2025 MonacoShop. All rights reserved.
               </p>
               <div className="social-icons">
                 <motion.a
