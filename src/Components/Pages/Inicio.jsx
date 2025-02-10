@@ -12,10 +12,10 @@ const fadeIn = {
 
 const productColors = {
   "Easy Victory": "rgb(227, 165, 25)", // Naranja dorado
-  "PSH4X": "rgb(127, 197, 236)", // Azul claro
-  "AimKing": "rgb(129, 6, 9)", // Rojo oscuro
+  PSH4X: "rgb(127, 197, 236)", // Azul claro
+  AimKing: "rgb(129, 6, 9)", // Rojo oscuro
   "Spider Tool": "rgb(244, 124, 23)",
-  "Snake": "rgb(205, 189, 12)",
+  Snake: "rgb(205, 189, 12)",
 };
 
 const ServiceCard = ({ image, title, description, onMoreInfo }) => (
@@ -180,7 +180,7 @@ const Inicio = () => {
         </Row>
       </Container>
 
-      <Container fluid className="py-5" id="planes-flexibles">
+      <Container fluid className="py-5" id="FLEXIBLEAIDPLANS">
         <motion.h2
           className="text-center mb-5"
           initial={{ opacity: 0 }}
@@ -272,7 +272,7 @@ const Inicio = () => {
         </Row>
       </Container>
 
-      <Container fluid className="py-5" id="planes-permanentes">
+      <Container fluid className="py-5" id="PERMANENTPLANS">
         <motion.h2
           className="text-center mb-5"
           initial={{ opacity: 0 }}
@@ -367,7 +367,7 @@ const Inicio = () => {
         </Row>
       </Container>
 
-      <Container fluid className="py-5" id="planes-permanentes">
+      <Container fluid className="py-5" id="EasyVictory-1">
         <motion.h2
           className="text-center mb-5"
           initial={{ opacity: 0 }}
@@ -378,8 +378,13 @@ const Inicio = () => {
             color: "rgb(227, 165, 25)",
           }} /* Hacemos el título más grueso y añadimos color */
         >
-<img src="/EasyVictory.png" alt="Easy Victory" className="easy-victory-icon" /> Easy Victory
-</motion.h2>
+          <img
+            src="/EasyVictory.png"
+            alt="Easy Victory"
+            className="easy-victory-icon"
+          />{" "}
+          Easy Victory
+        </motion.h2>
 
         <Row className="d-flex justify-content-center">
           <Col md={10}>
@@ -451,7 +456,7 @@ const Inicio = () => {
         </Row>
       </Container>
 
-      <Container fluid className="py-5" id="planes-permanentes">
+      <Container fluid className="py-5" id="PSH4X-2">
         <motion.h2
           className="text-center mb-5"
           initial={{ opacity: 0 }}
@@ -462,8 +467,8 @@ const Inicio = () => {
             color: "rgb(127, 197, 236)",
           }} /* Hacemos el título más grueso y añadimos color */
         >
-<img src="/PSH4.png" alt="PSH4X" className="psh4-icon" /> PSH4X
-</motion.h2>
+          <img src="/PSH4.png" alt="PSH4X" className="psh4-icon" /> PSH4X
+        </motion.h2>
 
         <Row className="d-flex justify-content-center">
           <Col md={10}>
@@ -521,7 +526,7 @@ const Inicio = () => {
         </Row>
       </Container>
 
-      <Container fluid className="py-5" id="planes-permanentes">
+      <Container fluid className="py-5" id="AimKing-3">
         <motion.h2
           className="text-center mb-5"
           initial={{ opacity: 0 }}
@@ -532,7 +537,8 @@ const Inicio = () => {
             color: "rgb(129, 6, 9)",
           }} /* Hacemos el título más grueso y añadimos color */
         >
-          <img src="/AimKing.jpg" alt="AimKing" className="aimking-icon" /> AimKing
+          <img src="/AimKing.jpg" alt="AimKing" className="aimking-icon" />{" "}
+          AimKing
         </motion.h2>
 
         <Row className="d-flex justify-content-center">
@@ -598,7 +604,7 @@ const Inicio = () => {
         </Row>
       </Container>
 
-      <Container fluid className="py-5" id="planes-permanentes">
+      <Container fluid className="py-5" id="SpiderTool-4">
         <motion.h2
           className="text-center mb-5"
           initial={{ opacity: 0 }}
@@ -609,8 +615,9 @@ const Inicio = () => {
             color: "rgb(244, 124, 23)",
           }} /* Hacemos el título más grueso y añadimos color */
         >
-<img src="/spider.png" alt="Spider Tool" className="spider-icon" /> Spider Tool
-</motion.h2>
+          <img src="/spider.png" alt="Spider Tool" className="spider-icon" />{" "}
+          Spider Tool
+        </motion.h2>
 
         <Row className="d-flex justify-content-center">
           <Col md={10}>
@@ -682,7 +689,7 @@ const Inicio = () => {
         </Row>
       </Container>
 
-      <Container fluid className="py-5" id="planes-permanentes">
+      <Container fluid className="py-5" id="Snake-5">
         <motion.h2
           className="text-center mb-5"
           initial={{ opacity: 0 }}
@@ -693,8 +700,8 @@ const Inicio = () => {
             color: "rgb(205, 189, 12)",
           }} /* Hacemos el título más grueso y añadimos color */
         >
-<img src="/snake.png" alt="Snake" className="snake-icon" /> Snake
-</motion.h2>
+          <img src="/snake.png" alt="Snake" className="snake-icon" /> Snake
+        </motion.h2>
 
         <Row className="d-flex justify-content-center">
           <Col md={10}>
@@ -765,7 +772,6 @@ const Inicio = () => {
           </Col>
         </Row>
       </Container>
-
 
       <Container fluid className="py-5" style={{ backgroundColor: "#FFFFFF" }}>
         <Row className="justify-content-center">
@@ -858,8 +864,6 @@ const Inicio = () => {
           </Col>
         </Row>
       </Container>
-
-      
 
       <footer
         className="bg-light text-dark py-4 mt-auto"

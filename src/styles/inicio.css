@@ -527,11 +527,51 @@ motion.h2 {
   background-color: #0051a8; /* Azul oscuro al hacer hover */
 }
 
-#planes-permanentes {
-  background-color: rgb(34, 36, 47)  ;
+#FLEXIBLEAIDPLANS
+{
+  background-color: rgb(34, 36, 47);
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+#PERMANENTPLANS
+{
+  background-color: rgb(34, 36, 47);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+#EasyVictory-1 {
+  background-color: rgb(34, 36, 47);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#PSH4X-2 {
+  background-color: rgb(34, 36, 47);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#AimKing-3 {
+  background-color: rgb(34, 36, 47);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#SpiderTool-4 {
+  background-color: rgb(34, 36, 47);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#Snake-5{
+  background-color: rgb(34, 36, 47);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 
 .permanent-plans-container {
   display: flex;
