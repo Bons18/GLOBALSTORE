@@ -12,9 +12,10 @@ const fadeIn = {
 
 const productColors = {
   "Easy Victory": "rgb(227, 165, 25)", // Naranja dorado
-  "PSH4X Original": "rgb(127, 197, 236)", // Azul claro
-  "AimKing Original": "rgb(129, 6, 9)", // Rojo oscuro
-  "Spider Tool Original": "rgb(244, 124, 23)",
+  "PSH4X": "rgb(127, 197, 236)", // Azul claro
+  "AimKing": "rgb(129, 6, 9)", // Rojo oscuro
+  "Spider Tool": "rgb(244, 124, 23)",
+  "Snake": "rgb(205, 189, 12)",
 };
 
 const ServiceCard = ({ image, title, description, onMoreInfo }) => (
@@ -43,25 +44,6 @@ const ServiceCard = ({ image, title, description, onMoreInfo }) => (
           {title}
         </Card.Title>
         <Card.Text style={{ color: "#757575" }}>{description}</Card.Text>
-        <Button
-          onClick={() => onMoreInfo(title)}
-          style={{
-            borderColor: "#007AFF",
-            color: "#FFFFFF",
-            backgroundColor: "#007AFF",
-            borderRadius: "12px",
-            padding: "12px 24px",
-            fontSize: "16px",
-            fontWeight: "600",
-            textTransform: "uppercase",
-            boxShadow: "0 4px 6px rgba(0, 122, 255, 0.2)",
-            transition: "all 0.3s ease",
-          }}
-          onMouseEnter={(e) => (e.target.style.backgroundColor = "#005BB5")}
-          onMouseLeave={(e) => (e.target.style.backgroundColor = "#007AFF")}
-        >
-          Ver más información
-        </Button>
       </Card.Body>
     </Card>
   </motion.div>
@@ -176,9 +158,15 @@ const Inicio = () => {
             },
             {
               image: "/AimKing.jpg",
-              title: "AimKing Original",
+              title: "AimKing",
               description:
                 "Optimize your performance with exclusive tools for 8 Ball Pool.",
+            },
+            {
+              image: "/snake.png",
+              title: "Snake",
+              description:
+                "Snake Aim is an 8-ball pool hack that guarantees 100% wins without manual intervention.",
             },
           ].map((service) => (
             <ServiceCard
@@ -390,8 +378,8 @@ const Inicio = () => {
             color: "rgb(227, 165, 25)",
           }} /* Hacemos el título más grueso y añadimos color */
         >
-          <i className="fas fa-trophy"></i> Easy Victory
-        </motion.h2>
+<img src="/public/EasyVictory.png" alt="Easy Victory" className="easy-victory-icon" /> Easy Victory
+</motion.h2>
 
         <Row className="d-flex justify-content-center">
           <Col md={10}>
@@ -474,8 +462,8 @@ const Inicio = () => {
             color: "rgb(127, 197, 236)",
           }} /* Hacemos el título más grueso y añadimos color */
         >
-          <i className="fas fa-plug"></i> PSH4X
-        </motion.h2>
+<img src="/PSH4.png" alt="PSH4X" className="psh4-icon" /> PSH4X
+</motion.h2>
 
         <Row className="d-flex justify-content-center">
           <Col md={10}>
@@ -544,7 +532,7 @@ const Inicio = () => {
             color: "rgb(129, 6, 9)",
           }} /* Hacemos el título más grueso y añadimos color */
         >
-          <i className="fas fa-bullseye"></i> AimKing
+          <img src="/AimKing.jpg" alt="AimKing" className="aimking-icon" /> AimKing
         </motion.h2>
 
         <Row className="d-flex justify-content-center">
@@ -621,8 +609,8 @@ const Inicio = () => {
             color: "rgb(244, 124, 23)",
           }} /* Hacemos el título más grueso y añadimos color */
         >
-          <i className="fas fa-spider"></i> Spider Tool
-        </motion.h2>
+<img src="/spider.png" alt="Spider Tool" className="spider-icon" /> Spider Tool
+</motion.h2>
 
         <Row className="d-flex justify-content-center">
           <Col md={10}>
@@ -694,38 +682,90 @@ const Inicio = () => {
         </Row>
       </Container>
 
-      <Modal
-        show={showModal}
-        onHide={() => setShowModal(false)}
-        size="lg"
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>Product Information</Modal.Title>
-        </Modal.Header>
-        <Modal.Body style={{ maxHeight: "80vh", overflowY: "auto" }}>
-          <div style={{ whiteSpace: "pre-wrap", wordWrap: "break-word" }}>
-            {productInfo}
-          </div>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button
-            variant="secondary"
-            onClick={() => setShowModal(false)}
-            style={{
-              backgroundColor: "#8E8E8E",
-              borderRadius: "12px",
-              padding: "12px 24px",
-              fontSize: "16px",
-              fontWeight: "600",
-              textTransform: "uppercase",
-              transition: "all 0.3s ease",
-            }}
-          >
-            Cerrar
-          </Button>
-        </Modal.Footer>
-      </Modal>
+      <Container fluid className="py-5" id="planes-permanentes">
+        <motion.h2
+          className="text-center mb-5"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          style={{
+            fontWeight: "bold",
+            color: "rgb(205, 189, 12)",
+          }} /* Hacemos el título más grueso y añadimos color */
+        >
+<img src="/snake.png" alt="Snake" className="snake-icon" /> Snake
+</motion.h2>
+
+        <Row className="d-flex justify-content-center">
+          <Col md={10}>
+            <div className="permanent-plans-container">
+              <div className="permanent-plan-card">
+                <div className="plan-header">
+                  <span>
+                    <i className="fas fa-clock"></i> Duration
+                  </span>
+                  <span>
+                    <i className="fas fa-key"></i> Basic
+                  </span>
+                  <span>
+                    <i className="fas fa-headset"></i> Premium
+                  </span>
+                </div>
+                <div className="permanent-plan-info">
+                  <div className="plan-details">
+                    <span>
+                      <i className="fas fa-calendar-alt"></i> To be defined:
+                    </span>
+                    <span className="price">To be defined</span>
+                    <span className="price-with-support">To be defined</span>
+                  </div>
+                  <div className="plan-details">
+                    <span>
+                      <i className="fas fa-calendar-alt"></i> To be defined:
+                    </span>
+                    <span className="price">To be defined</span>
+                    <span className="price-with-support">To be defined</span>
+                  </div>
+                  <div className="plan-details">
+                    <span>
+                      <i className="fas fa-calendar-alt"></i> To be defined:
+                    </span>
+                    <span className="price">To be defined</span>
+                    <span className="price-with-support">To be defined</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="text-center mt-4 d-flex justify-content-center align-items-center">
+              <a
+                href="https://youtube.com/shorts/O-V3BohXfao?si=r8qjFNHP68P-tdBH"
+                className="btn btn-youtube ms-3"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-youtube"></i> Sample Video #1
+              </a>
+              <a
+                href="https://t.me/ChetoHack_100AntiBan_8BP?text=Hola%2C%20Monaco%20%E2%99%8B%2C%0AMe%20gustar%C3%ADa%20adquirir%20una%20llave%20del%20Spider%20Tool%20Original.%0A%C2%BFPodr%C3%ADas%20indicarme%20c%C3%B3mo%20proceder%3F%20%F0%9F%A4%94%F0%9F%99%8C"
+                className="btn btn-telegram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-telegram"></i> Contact by Telegram
+              </a>
+              <a
+                href="https://youtube.com/shorts/u3DzIa6IV4A"
+                className="btn btn-youtube ms-3"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-youtube"></i> Sample video #2
+              </a>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
 
       <Container fluid className="py-5" style={{ backgroundColor: "#FFFFFF" }}>
         <Row className="justify-content-center">
@@ -818,6 +858,8 @@ const Inicio = () => {
           </Col>
         </Row>
       </Container>
+
+      
 
       <footer
         className="bg-light text-dark py-4 mt-auto"
