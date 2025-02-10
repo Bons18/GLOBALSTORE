@@ -1,0 +1,105 @@
+:root {
+    --color-cafe: #4e342e; /* Café */
+    --color-verde: #388e3c; /* Verde */
+    --color-negro: #0d0d0d; /* Negro */
+    --color-azul: #1e88e5; /* Azul */
+    --color-dorado: #f7c46a; /* Dorado para los detalles */
+  }
+  
+  body {
+      background-color: #f1f1f1; /* Fondo claro que resalta el contenido */
+  }
+  
+  .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      margin-top: 0;
+      background-color: #ffffff; /* Fondo blanco para las cards */
+  }
+  
+  .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el mouse */
+  }
+  
+  button {
+      background-color: var(--color-azul); /* Azul para los botones */
+      color: white;
+      transition: background-color 0.3s ease;
+      border-radius: 25px; /* Botón con bordes redondeados */
+  }
+  
+  button:hover {
+      background-color: var(--color-verde); /* Verde para el hover */
+  }
+  
+  h1, h2, h5 {
+      color: var(--color-cafe); /* Títulos en café */
+      margin-top: 0;
+  }
+  
+  .text-muted {
+      color: #666;
+  }
+  
+  .position-absolute {
+      z-index: 1;
+  }
+  
+  .d-flex {
+      align-items: center;
+  }
+  
+  .mb-4 {
+      margin-bottom: 2rem;
+  }
+  
+  input, textarea {
+      background-color: #f9f9f9;
+      border: 1px solid #e0e0e0;
+      border-radius: 25px;
+      transition: border-color 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+      border-color: var(--color-azul); /* Azul al enfocar input o textarea */
+      box-shadow: 0 0 5px rgba(30, 136, 229, 0.5); /* Resalta con azul al enfocar */
+  }
+  
+  iframe {
+      display: block;
+      width: 100%;
+      border: none;
+      margin-top: 0;
+  }
+  
+  .map-container {
+      margin-bottom: 20px;
+      padding: 0;
+  }
+  
+  /* Estilo de los encabezados */
+  h1 {
+      font-size: 3rem;
+  }
+  
+  h2 {
+      font-size: 2.5rem;
+  }
+  
+  h5 {
+      font-size: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+      h1 {
+          font-size: 2rem;
+      }
+  
+      .card {
+          padding: 20px;
+      }
+  }
+  

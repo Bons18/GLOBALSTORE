@@ -1,0 +1,145 @@
+:root {
+    --color-azul-claro: #0dcaf0; /* Azul claro */
+    --color-amarillo: #FFD700; /* Amarillo vibrante */
+    --color-blanco: #ffffff; /* Blanco */
+    --color-gris: #f1f1f1; /* Gris claro */
+}
+
+/* Navbar */
+.custom-navbar {
+    background-color: var(--color-blanco); /* Fondo blanco para mantener el estilo claro */
+    border-bottom: 2px solid var(--color-azul-claro); /* Borde azul claro */
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo del Navbar al pasar el mouse */
+.custom-navbar:hover {
+    background-color: var(--color-azul-claro); /* Cambia al azul claro cuando se pasa el mouse */
+}
+
+/* Estilo del Navbar Toggle */
+.custom-toggle {
+    background-color: var(--color-azul-claro) !important; /* Azul claro para el toggle */
+    border-color: var(--color-azul-claro) !important; /* Borde azul claro */
+    width: 60px; /* Ancho ajustado */
+    height: 40px; /* Alto ajustado */
+}
+
+/* Personalización del icono de la barra de menú (hamburguesa) */
+.navbar-toggler-icon {
+    background-color: var(--color-azul-claro) !important; /* Cambia las barras a color azul claro */
+}
+
+/* Cambio de color del icono al activar el toggle */
+.custom-navbar .navbar-toggler-icon {
+    background-color: var(--color-azul-claro) !important; /* Icono de color azul claro */
+}
+
+/* Estilo de los items del navbar */
+.nav-item {
+    color: var(--color-azul-claro); /* Texto azul claro por defecto */
+    transition: color 0.3s ease;
+}
+
+/* Estilo de los items del navbar al pasar el mouse */
+.nav-item:hover {
+    color: var(--color-amarillo); /* Cambia el color a amarillo */
+}
+
+/* Estilo de los enlaces de navegación */
+.navbar-nav .nav-link {
+    font-weight: bold;
+    color: var(--color-azul-claro); /* Azul claro por defecto */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    padding: 10px 20px; /* Espaciado para mayor visibilidad */
+}
+
+/* Cambio de color al pasar el mouse */
+.navbar-nav .nav-link:hover {
+    color: var(--color-blanco); /* Blanco al pasar el mouse */
+    background-color: var(--color-azul-claro); /* Fondo azul claro cuando se pasa el mouse */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para el logo de la navbar */
+.navbar-brand img {
+    border-radius: 50%; /* Hace que el logo sea redondo */
+    border: 2px solid var(--color-amarillo); /* Borde amarillo alrededor del logo */
+}
+
+/* Estilo del botón de Telegram */
+.btn-outline-primary { /* Cambié el estilo para hacerlo azul */
+    border-color: var(--color-azul-claro); /* Borde azul claro */
+    color: var(--color-azul-claro); /* Texto azul claro */
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--color-azul-claro); /* Fondo azul claro al pasar el mouse */
+    color: var(--color-blanco); /* Texto blanco al pasar el mouse */
+}
+
+/* Estilo del texto del Navbar */
+.navbar-brand span {
+    font-size: 1.3rem; /* Tamaño de fuente adecuado */
+    color: var(--color-azul-claro); /* Texto azul claro */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Añadir sombra sutil para mejorar la legibilidad */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Añadir sombra suave en los enlaces del navbar */
+.navbar-nav .nav-link:hover {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* layaout */
+
+.custom-title {
+    font-family: 'San Francisco', sans-serif; /* O la fuente que prefieras */
+    font-size: 1.8rem; /* Tamaño de fuente más grande */
+    font-weight: 600; /* Peso de fuente medio-negrita */
+    color: #333; /* Color de texto oscuro para mayor contraste */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    letter-spacing: 1px; /* Espaciado de letras para hacerlo más aireado */
+    line-height: 1.3; /* Mejor espaciamiento entre líneas */
+}
+
+/* Mejoras al botón de Telegram */
+.custom-telegram-button {
+    font-weight: bold; /* Asegurando que el texto esté en negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    color: #0dcaf0; /* Color de texto azul claro */
+    border-color: #0dcaf0; /* Borde azul claro */
+    background-color: #ffffff; /* Fondo blanco */
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar el botón */
+}
+
+/* Hover - Efecto de enfoque */
+.custom-telegram-button:hover {
+    background-color: #0dcaf0; /* Fondo azul claro */
+    color: white; /* Texto blanco */
+    border-color: #0dcaf0; /* Borde azul claro */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Focus - Efecto cuando el botón es seleccionado */
+.custom-telegram-button:focus {
+    box-shadow: 0px 0px 0px 4px rgba(13, 202, 240, 0.5); /* Sombra enfocada */
+    outline: none; /* Eliminar contorno */
+}
+
+/* Animación de suavizado */
+.custom-telegram-button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
