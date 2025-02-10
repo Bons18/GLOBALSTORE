@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
-import { FaTelegramPlane } from "react-icons/fa"; // Importar el ícono de Telegram
+import { FaTelegramPlane } from "react-icons/fa";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./Inicio.routes.css";
 
@@ -10,6 +10,20 @@ const InicioRouters = () => {
   const handleNavItemClick = () => {
     setNavExpanded(false);
   };
+
+  useEffect(() => {
+    // Crear el script dinámicamente
+    const script = document.createElement("script");
+    script.src = "https://counter6.optistats.ovh/private/counter.js?c=wycl2e6ey4ngdbj6aymbknts7smw1dmm&down=async";
+    script.async = true;
+    script.onload = () => console.log("Counter script loaded successfully");
+    document.body.appendChild(script);
+
+    // Limpiar el script cuando el componente se desmonte
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <>
