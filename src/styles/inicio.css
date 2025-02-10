@@ -350,7 +350,7 @@ motion.h2 {
 }
 
 #planes-flexibles {
-  background-color: #f7f7f7;
+  background-color: rgb(34, 36, 47);
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -528,7 +528,7 @@ motion.h2 {
 }
 
 #planes-permanentes {
-  background-color: #f7f7f7;
+  background-color: rgb(34, 36, 47)  ;
   padding-top: 50px;
   padding-bottom: 50px;
 }
