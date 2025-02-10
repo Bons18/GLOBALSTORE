@@ -20,6 +20,7 @@ const InicioRouters = () => {
         style={{ backgroundColor: "rgb(34, 36, 47)" }}
       >
         <Container fluid>
+          
   {/* Navbar Toggle button */}
   <Navbar.Toggle
     aria-controls="basic-navbar-nav"
@@ -27,14 +28,6 @@ const InicioRouters = () => {
     className="custom-toggle"
   />
   <Navbar.Collapse id="basic-navbar-nav">
-    <Navbar.Brand className="d-flex flex-column flex-sm-row align-items-center justify-content-center text-center text-sm-start mb-3 mb-sm-0">
-      <img
-        src="/monaco.jpg"
-        width="50"
-        height="50"
-        className="me-3 rounded-circle border border-2 border-light mb-2 mb-sm-0"
-        alt="Logo"
-      />
       <div>
         <span
           className="fw-bold text-white custom-title d-block"
@@ -44,7 +37,7 @@ const InicioRouters = () => {
             marginBottom: "5px",
           }}
         >
-          ¡Bienvenido!
+          
         </span>
         <span
           className="text-muted"
@@ -56,7 +49,6 @@ const InicioRouters = () => {
           Tu tienda para hacks de 8 Ball Pool.
         </span>
       </div>
-    </Navbar.Brand>
 
     {/* Botones de Telegram y otros */}
     <Nav className="ms-auto mb-3 mb-sm-0">
