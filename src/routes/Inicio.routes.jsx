@@ -46,7 +46,6 @@ const InicioRouters = () => {
             fontWeight: "400",
           }}
         >
-          Tu tienda para hacks de 8 Ball Pool.
         </span>
       </div>
 
