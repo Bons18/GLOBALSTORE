@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button, Card, Modal } from "react-bootstrap";
-import { FaChevronRight, FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa6";
+import { FaExchangeAlt } from "react-icons/fa";
+
 import { motion } from "framer-motion";
 import "../../styles/inicio.css";
 
@@ -79,14 +81,15 @@ const Inicio = () => {
               />
             </div>
             <h1 className="mb-4 fw-bold" style={{ color: "#FFFFFF" }}>
-              Welcome to the,{" "}
+              Welcome to the movement,{" "}
               <span style={{ fontWeight: "bold", color: "#FFD700" }}>
-                MOVEMENT 𝗣𝗥𝗢 𝗣𝗟𝗔𝗬𝗘𝗥𝗦 𝗦𝗧𝗢𝗥𝗘
+                𝗣𝗥𝗢 𝗣𝗟𝗔𝗬𝗘𝗥𝗦 𝗦𝗧𝗢𝗥𝗘
               </span>
               <br />
               <br />
               <span style={{ fontWeight: "bold", fontSize: "20px" }}>
-                The most professional and secure support service on the all market.
+                The most professional and secure support service on the all
+                market.
               </span>
             </h1>
 
@@ -94,29 +97,35 @@ const Inicio = () => {
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <Button
                   variant="outline-light"
-                  href="https://t.me/addlist/ic7ljy-1hEVkYTdh"
-                  className="px-4 py-2 fw-bold"
-                  aria-label="Discover more"
+                  href="https://discord.gg/J4HJ5UFg4J"
+                  className="fw-bold text-center d-flex align-items-center justify-content-center"
+                  aria-label="Join Discord"
                   style={{
-                    borderColor: "#FFFFFF",
+                    borderColor: "#5865F2", // Color oficial de Discord
                     color: "#FFFFFF",
-                    backgroundColor: "transparent",
+                    backgroundColor: "#5865F2",
                     borderRadius: "12px",
-                    padding: "12px 24px",
-                    fontSize: "16px",
+                    padding: "10px 20px",
+                    fontSize: "clamp(14px, 2vw, 16px)", // Adaptable a la pantalla
                     fontWeight: "600",
                     textTransform: "uppercase",
-                    boxShadow: "0 4px 6px rgba(255, 255, 255, 0.2)",
                     transition: "all 0.3s ease",
+                    boxShadow: "0 4px 6px rgba(88, 101, 242, 0.4)", // Sombra en tono Discord
+                    display: "flex",
+                    flexWrap: "nowrap",
+                    gap: "8px", // Espacio entre icono y texto
+                    minWidth: "150px",
+                    maxWidth: "100%",
                   }}
                   onMouseEnter={(e) =>
-                    (e.target.style.backgroundColor = "#606060")
-                  }
+                    (e.target.style.backgroundColor = "#4752C4")
+                  } // Color más oscuro al pasar el cursor
                   onMouseLeave={(e) =>
-                    (e.target.style.backgroundColor = "transparent")
+                    (e.target.style.backgroundColor = "#5865F2")
                   }
                 >
-                  Join now to the Discord server. <FaChevronRight className="ms-2" />
+                  <span className="d-none d-sm-inline">Join Discord</span>
+                  <FaDiscord />
                 </Button>
               </motion.div>
 
@@ -124,28 +133,34 @@ const Inicio = () => {
                 <Button
                   variant="outline-light"
                   href="/convert.html"
-                  className="px-4 py-2 fw-bold"
+                  className="fw-bold text-center d-flex align-items-center justify-content-center"
                   aria-label="Descubre más"
                   style={{
                     borderColor: "#FFFFFF",
                     color: "#FFFFFF",
                     backgroundColor: "#198754",
                     borderRadius: "12px",
-                    padding: "12px 24px",
-                    fontSize: "16px",
+                    padding: "10px 20px",
+                    fontSize: "clamp(14px, 2vw, 16px)", // Se adapta al tamaño de pantalla
                     fontWeight: "600",
                     textTransform: "uppercase",
                     transition: "all 0.3s ease",
                     boxShadow: "rgba(255, 255, 255, 0.2) 0px 4px 6px",
+                    display: "flex",
+                    flexWrap: "nowrap",
+                    gap: "8px", // Espaciado entre el texto y el icono
+                    minWidth: "150px", // Para evitar que se haga demasiado pequeño
+                    maxWidth: "100%", // Se adapta al ancho disponible
                   }}
-                  onMouseEnter={
-                    (e) => (e.target.style.backgroundColor = "#198754") // Mantén el verde
+                  onMouseEnter={(e) =>
+                    (e.target.style.backgroundColor = "#198754")
                   }
-                  onMouseLeave={
-                    (e) => (e.target.style.backgroundColor = "#198754") // Mantén el verde al salir
+                  onMouseLeave={(e) =>
+                    (e.target.style.backgroundColor = "#198754")
                   }
                 >
-                  Mónaco Converter <FaChevronRight className="ms-2" />
+                  <span className="d-none d-sm-inline">Mónaco Converter</span>
+                  <FaExchangeAlt />
                 </Button>
               </motion.div>
             </div>
@@ -328,16 +343,17 @@ const Inicio = () => {
         </Row>
       </Container>
 
-      <Container fluid className="py-3" id="PERMANENTPLANS">
-        <motion.h2
-          className="text-center mb-3"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          style={{ fontWeight: "bold", color: "#007bff" }} /* Azul brillante */
-        >
-          <i className="fas fa-calendar-check"></i> PERMANENT PLANS
-        </motion.h2>
+      <Container fluid className="py-3" id="permanent-plans"> {/* id corregido */}
+  <motion.h2
+    className="text-center mb-3"
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 0.8 }}
+    style={{ fontWeight: "bold", color: "#007bff" }} // Azul brillante
+  >
+    <i className="fas fa-calendar-check"></i> PERMANENT PLANS
+  </motion.h2>
+
 
         <Row className="d-flex justify-content-center">
           <Col md={10}>

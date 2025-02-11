@@ -85,6 +85,41 @@ const InicioRouters = () => {
         Join the community
       </Button>
 
+      <Button
+  variant="outline-light"
+  className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button mb-2 mb-sm-0"
+  href="#permanent-plans" // Asegurar que el ID coincide
+  style={{
+    fontWeight: "bold",
+    maxWidth: "250px",
+    width: "auto",
+    paddingLeft: "15px",
+    paddingRight: "15px",
+    backgroundColor: "#007AFF",
+    color: "#FFFFFF",
+    borderRadius: "50px",
+    boxShadow: "0 4px 8px rgba(0, 122, 255, 0.3)",
+    transition: "all 0.3s ease",
+    marginRight: "10px",
+    marginBottom: "10px",
+    textDecoration: "none",
+    scrollBehavior: "smooth", // Hace el scroll más fluido
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.backgroundColor = "#005BB5";
+    e.target.style.boxShadow = "0 6px 12px rgba(0, 91, 181, 0.4)";
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.backgroundColor = "#007AFF";
+    e.target.style.boxShadow = "0 4px 8px rgba(0, 122, 255, 0.3)";
+  }}
+>
+  Permanent Plans
+</Button>
+
+
+
+
       {/* Botón Easy Victory */}
       <Button
         variant="outline-light"
