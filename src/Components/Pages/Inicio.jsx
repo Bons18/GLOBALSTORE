@@ -1343,7 +1343,7 @@ const Inicio = () => {
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.8 }}
                 >
-                  © 2025 MonacoStore. All rights reserved.
+                  ® 2025 Global Store All rights reserved.
                 </motion.h2>
               </Col>
             </Row>
