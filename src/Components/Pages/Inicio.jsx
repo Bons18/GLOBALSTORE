@@ -86,7 +86,7 @@ const Inicio = () => {
               <br />
               <br />
               <span style={{ fontWeight: "bold", fontSize: "20px" }}>
-                The most professional and secure service on the market.
+                The most professional and secure support service on the all market.
               </span>
             </h1>
 
@@ -116,7 +116,7 @@ const Inicio = () => {
                     (e.target.style.backgroundColor = "transparent")
                   }
                 >
-                  Discover more <FaChevronRight className="ms-2" />
+                  Join now to the Discord server. <FaChevronRight className="ms-2" />
                 </Button>
               </motion.div>
 
