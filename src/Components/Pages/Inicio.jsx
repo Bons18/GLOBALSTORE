@@ -321,7 +321,7 @@ const Inicio = () => {
                   className="fab fa-youtube me-2"
                   style={{ fontSize: "20px" }}
                 ></i>
-                Sample Video #2
+                Sample video #2
               </Button>
             </div>
           </Col>
@@ -427,7 +427,7 @@ const Inicio = () => {
                   className="fab fa-youtube me-2"
                   style={{ fontSize: "20px" }}
                 ></i>
-                Sample Video #1
+                Sample video #1
               </Button>
 
               {/* Botón Buy by Telegram */}
@@ -599,7 +599,7 @@ const Inicio = () => {
                   className="fab fa-youtube me-2"
                   style={{ fontSize: "20px" }}
                 ></i>
-                Sample Video #1
+                Sample video #1
               </Button>
 
               {/* Botón Buy by Telegram */}
@@ -671,7 +671,7 @@ const Inicio = () => {
                   className="fab fa-youtube me-2"
                   style={{ fontSize: "20px" }}
                 ></i>
-                Sample Video #2
+                Sample video #2
               </Button>
             </div>
           </Col>
@@ -752,7 +752,7 @@ const Inicio = () => {
                   className="fab fa-youtube me-2"
                   style={{ fontSize: "20px" }}
                 ></i>
-                Sample Video #1
+                Sample video #1
               </Button>
 
               {/* Botón Buy by Telegram */}
@@ -913,7 +913,7 @@ const Inicio = () => {
                   className="fab fa-youtube me-2"
                   style={{ fontSize: "20px" }}
                 ></i>
-                Sample Video #1
+                Sample video #1
               </Button>
 
               {/* Botón Buy by Telegram */}
@@ -1081,7 +1081,7 @@ const Inicio = () => {
                   className="fab fa-youtube me-2"
                   style={{ fontSize: "20px" }}
                 ></i>
-                Sample Video #1
+                Sample video #1
               </Button>
 
               {/* Botón Buy by Telegram */}
@@ -1248,7 +1248,7 @@ const Inicio = () => {
                   className="fab fa-youtube me-2"
                   style={{ fontSize: "20px" }}
                 ></i>
-                Sample Video #1
+                Sample video #1
               </Button>
 
               {/* Botón Buy by Telegram */}
