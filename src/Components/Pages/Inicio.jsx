@@ -79,14 +79,14 @@ const Inicio = () => {
               />
             </div>
             <h1 className="mb-4 fw-bold" style={{ color: "#FFFFFF" }}>
-              Welcome to,{" "}
+              Welcome to the,{" "}
               <span style={{ fontWeight: "bold", color: "#FFD700" }}>
-                𝗣𝗥𝗢 𝗣𝗟𝗔𝗬𝗘𝗥𝗦 𝗦𝗧𝗢𝗥𝗘
+                MOVEMENT 𝗣𝗥𝗢 𝗣𝗟𝗔𝗬𝗘𝗥𝗦 𝗦𝗧𝗢𝗥𝗘
               </span>
               <br />
               <br />
               <span style={{ fontWeight: "bold", fontSize: "20px" }}>
-                The most professional and secure service on the market.
+                The most professional and secure support service on the all market.
               </span>
             </h1>
 
@@ -116,7 +116,7 @@ const Inicio = () => {
                     (e.target.style.backgroundColor = "transparent")
                   }
                 >
-                  Discover more <FaChevronRight className="ms-2" />
+                  Join now to the Discord server. <FaChevronRight className="ms-2" />
                 </Button>
               </motion.div>
 
@@ -145,7 +145,7 @@ const Inicio = () => {
                     (e) => (e.target.style.backgroundColor = "#198754") // Mantén el verde al salir
                   }
                 >
-                  Monaco Converter <FaChevronRight className="ms-2" />
+                  Mónaco Converter <FaChevronRight className="ms-2" />
                 </Button>
               </motion.div>
             </div>
@@ -824,7 +824,7 @@ const Inicio = () => {
                   className="fab fa-youtube me-2"
                   style={{ fontSize: "20px" }}
                 ></i>
-                Sample video #2
+                Sample Video #2
               </Button>
             </div>
           </Col>
@@ -985,7 +985,7 @@ const Inicio = () => {
                   className="fab fa-youtube me-2"
                   style={{ fontSize: "20px" }}
                 ></i>
-                Sample video #2
+                Sample Video #2
               </Button>
             </div>
           </Col>
@@ -1153,7 +1153,7 @@ const Inicio = () => {
                   className="fab fa-youtube me-2"
                   style={{ fontSize: "20px" }}
                 ></i>
-                Sample video #2
+                Sample Video #2
               </Button>
             </div>
           </Col>
@@ -1320,7 +1320,7 @@ const Inicio = () => {
                   className="fab fa-youtube me-2"
                   style={{ fontSize: "20px" }}
                 ></i>
-                Sample video #2
+                Sample Video #2
               </Button>
             </div>
           </Col>
@@ -1343,7 +1343,7 @@ const Inicio = () => {
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.8 }}
                 >
-                  © 2025 MonacoStore. All rights reserved.
+                  ® 2025 Global Store All rights reserved.
                 </motion.h2>
               </Col>
             </Row>
