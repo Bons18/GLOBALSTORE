@@ -145,7 +145,7 @@ const Inicio = () => {
                     (e) => (e.target.style.backgroundColor = "#198754") // Mantén el verde al salir
                   }
                 >
-                  Monaco Converter <FaChevronRight className="ms-2" />
+                  Mónaco Converter <FaChevronRight className="ms-2" />
                 </Button>
               </motion.div>
             </div>
