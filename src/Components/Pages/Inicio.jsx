@@ -79,9 +79,9 @@ const Inicio = () => {
               />
             </div>
             <h1 className="mb-4 fw-bold" style={{ color: "#FFFFFF" }}>
-              Welcome to,{" "}
+              Welcome to the,{" "}
               <span style={{ fontWeight: "bold", color: "#FFD700" }}>
-                𝗣𝗥𝗢 𝗣𝗟𝗔𝗬𝗘𝗥𝗦 𝗦𝗧𝗢𝗥𝗘
+                MOVEMENT 𝗣𝗥𝗢 𝗣𝗟𝗔𝗬𝗘𝗥𝗦 𝗦𝗧𝗢𝗥𝗘
               </span>
               <br />
               <br />
