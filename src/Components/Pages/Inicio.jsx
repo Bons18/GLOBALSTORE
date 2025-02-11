@@ -427,7 +427,7 @@ const Inicio = () => {
                   className="fab fa-youtube me-2"
                   style={{ fontSize: "20px" }}
                 ></i>
-                Sample video #1
+                Sample Video #1
               </Button>
 
               {/* Botón Buy by Telegram */}
