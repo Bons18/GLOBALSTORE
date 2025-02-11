@@ -556,6 +556,31 @@ const Inicio = () => {
                     <i className="fas fa-gem"></i> Premium
                   </span>
                 </div>
+
+                <div className="permanent-plan-info">
+                  <div className="plan-details">
+                    <span>
+                      <i className="fas fa-calendar-week"></i> 7 days:
+                    </span>
+                    <span className="price">USDT 7,00</span>
+                    <span className="price-with-support">USDT 10,00</span>
+                  </div>
+                  <div className="plan-details">
+                    <span>
+                      <i className="fas fa-calendar-day"></i> 15 days:
+                    </span>
+                    <span className="price">USDT 12,00</span>
+                    <span className="price-with-support">USDT 15,00</span>
+                  </div>
+                  <div className="plan-details">
+                    <span>
+                      <i className="fas fa-calendar-alt"></i> 30 days:
+                    </span>
+                    <span className="price">USDT 17,00</span>
+                    <span className="price-with-support">USDT 20,00</span>
+                  </div>
+                </div>
+
                 <div className="permanent-plan-info">
                   <div className="plan-details">
                     <span>
