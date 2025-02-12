@@ -75,7 +75,7 @@ const Inicio = () => {
           <Col md={8}>
             <div className="text-center mb-4">
               <img
-                src="/15.png"
+                src="/Logo.png"
                 alt="Logo"
                 style={{ width: "300px", height: "300px" }}
               />
