@@ -77,7 +77,7 @@ const Inicio = () => {
               <img
                 src="/Logo.png"
                 alt="Logo"
-                style={{ width: "300px", height: "300px" }}
+                style={{ width: "320px", height: "300px" }}
               />
             </div>
             <h1 className="mb-4 fw-bold" style={{ color: "#FFFFFF" }}>
