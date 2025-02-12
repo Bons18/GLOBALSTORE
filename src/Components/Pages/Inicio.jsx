@@ -13,7 +13,7 @@ const fadeIn = {
 
 const productColors = {
   "Easy Victory": "rgb(227, 165, 25)", // Naranja dorado
-  PSH4X: "rgb(127, 197, 236)", // Azul claro
+  PSH4X: "rgb(127, 197, 236)", // Azul clarof
   AimKing: "rgb(129, 6, 9)", // Rojo oscuro
   "Spider Tool": "rgb(244, 124, 23)",
   Snake: "rgb(205, 189, 12)",
@@ -801,7 +801,7 @@ const Inicio = () => {
               <Button
                 variant="outline-light"
                 className="rounded-pill py-3 px-4 border-0 d-flex align-items-center position-relative overflow-hidden custom-telegram-button ms-3 mb-2 mb-sm-0"
-                href="https://t.me/ChetoHack_100AntiBan_8BP?text=Hola%2C%20Monaco%20%E2%99%8B%2C%0AMe%20gustar%C3%ADa%20adquirir%20una%20llave%20del%20PSH4X%20Original.%0A%C2%BFPodr%C3%ADas%20indicarme%20c%C3%B3mo%20proceder%3F%20%F0%9F%A4%94%F0%9F%99%8C"
+                href="https://t.me/ChetoHack_100AntiBan_8BP?text=%F0%9F%91%8B%F0%9F%8F%BC%20Hola%20y%20buenas%20M%C3%B3naco%20%F0%9F%8E%B1%E2%9C%A8%0A%0AMe%20gustar%C3%ADa%20adquirir%20una%20llave%20del%20PSH4X%20%F0%9F%92%80%20Original%20con%20tu%20negocio%20%C2%BFPodr%C3%ADas%20indicarme%20c%C3%B3mo%20proceder%20con%20el%20pago%20del%20servicio%3F%20%F0%9F%98%8A"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
