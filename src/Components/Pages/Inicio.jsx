@@ -81,7 +81,8 @@ const Inicio = () => {
               />
             </div>
             <h1 className="mb-4 fw-bold" style={{ color: "#FFFFFF" }}>
-              Welcome to the movement,{" "}
+              Welcome to the movement
+              <br />
               <span style={{ fontWeight: "bold", color: "#FFD700" }}>
                 𝗣𝗥𝗢 𝗣𝗟𝗔𝗬𝗘𝗥𝗦 𝗦𝗧𝗢𝗥𝗘
               </span>
@@ -343,18 +344,18 @@ const Inicio = () => {
         </Row>
       </Container>
 
-      <Container fluid className="py-3" id="permanent-plans"> {/* id corregido */}
-  <motion.h2
-    className="text-center mb-3"
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    transition={{ duration: 0.8 }}
-    style={{ fontWeight: "bold", color: "#007bff" }} // Azul brillante
-  >
-    <i className="fas fa-calendar-check"></i> PERMANENT PLANS
-  </motion.h2>
-
-
+      <Container fluid className="py-3" id="permanent-plans">
+        {" "}
+        {/* id corregido */}
+        <motion.h2
+          className="text-center mb-3"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          style={{ fontWeight: "bold", color: "#007bff" }} // Azul brillante
+        >
+          <i className="fas fa-calendar-check"></i> PERMANENT PLANS
+        </motion.h2>
         <Row className="d-flex justify-content-center">
           <Col md={10}>
             <div className="permanent-plans-container">
